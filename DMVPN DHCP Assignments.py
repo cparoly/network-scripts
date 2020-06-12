@@ -4,6 +4,36 @@ from netmiko import NetMikoAuthenticationException
 import re
 import ipaddress
 import getpass
+from subprocess import Popen, PIPE
+
+def router(x):
+	p = Popen(['tracert', x], stdout=PIPE)
+	routes = []
+
+	while True:
+		line = p.stdout.readline()
+		line = line.decode('utf-8')
+		test = re.findall(r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}', line)
+
+		if len(test) == 1:
+			routes.append(test)
+		elif 'complete' in line:
+			routes = str(routes[-2])
+			routes = routes.strip('[]')
+			routes = routes.strip("''")
+
+		elif 'Request timed out' in line:
+			routes = str(routes[-1])
+			routes = routes.strip('[]')
+			routes = routes.strip("''")
+		else:
+			continue
+
+
+	return routes
+
+
+
 
 
 
@@ -12,25 +42,14 @@ user = input("Username: ")
 pwd = getpass.getpass()
 
 
-while True:
 
-	try:
-		device = input("What is the IP of the device?: ")
-		if "ns" or "nw" not in device:
-			device = ipaddress.ip_address(device)
-		else:
-			continue
-
-		break
-
-	except ValueError:
-		print("that is not a valid IP or hostname")
-		continue
 
 while True:
 	try:
-		IP = input("What is the IP address you are reserving?: ")
-		IP = ipaddress.ip_address(IP)
+		reserve = input("What is the IP address you are reserving?: ")
+		print(type(reserve))
+		print(reserve)
+		IP = ipaddress.ip_address(reserve)
 		break
 	except ValueError:
 		print("that is not a valid IP")
@@ -47,14 +66,15 @@ while True:
 
 	except Exception('That is not the correct MAC ADDRESS format.'):
 		continue
+device = router(reserve)
+print(type(device))
 
 clear = 'clear ip dhcp binding ' + str(IP)
-
 # Connect to device
-print ("Connecting to " + str(device))
+print ("Connecting to " + device)
 cisco = {
 	'device_type': 'cisco_ios',
-	'host': str(device),
+	'host': device,
 	'username': user,
 	'password': pwd
 }
