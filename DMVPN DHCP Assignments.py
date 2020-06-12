@@ -13,6 +13,7 @@ def router(x):
 	while True:
 		line = p.stdout.readline()
 		line = line.decode('utf-8')
+		print(line)
 		test = re.findall(r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}', line)
 
 		if len(test) == 1:
@@ -21,11 +22,13 @@ def router(x):
 			routes = str(routes[-2])
 			routes = routes.strip('[]')
 			routes = routes.strip("''")
+			break
 
 		elif 'Request timed out' in line:
 			routes = str(routes[-1])
 			routes = routes.strip('[]')
 			routes = routes.strip("''")
+			break
 		else:
 			continue
 
@@ -104,5 +107,6 @@ reserved = net_connect.send_config_set(config_commands)
 
 
 print(reserved)
+print (net_connect.send_command('show ip dhcp bind | i ' + str(IP)))
 net_connect.disconnect()
 input("Press Enter to exit")
