@@ -50,8 +50,6 @@ pwd = getpass.getpass()
 while True:
 	try:
 		reserve = input("What is the IP address you are reserving?: ")
-		print(type(reserve))
-		print(reserve)
 		IP = ipaddress.ip_address(reserve)
 		break
 	except ValueError:
@@ -70,7 +68,7 @@ while True:
 	except Exception('That is not the correct MAC ADDRESS format.'):
 		continue
 device = router(reserve)
-print(type(device))
+
 
 clear = 'clear ip dhcp binding ' + str(IP)
 # Connect to device
@@ -107,6 +105,7 @@ reserved = net_connect.send_config_set(config_commands)
 
 
 print(reserved)
-print (net_connect.send_command('show ip dhcp bind | i ' + str(IP)))
+print(net_connect.send_command('show ip dhcp bind | i ' + str(IP)))
+print(net_connect.send_command("wr"))
 net_connect.disconnect()
 input("Press Enter to exit")

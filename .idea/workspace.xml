@@ -21,11 +21,15 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7f2ec54-ea13-4332-993a-7c3e4c3da9fa" name="Default" comment="added traceroute function">
+    <list default="true" id="f7f2ec54-ea13-4332-993a-7c3e4c3da9fa" name="Default" comment="got it">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/work.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/work.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DMVPN DHCP Assignments.py" beforeDir="false" afterPath="$PROJECT_DIR$/DMVPN DHCP Assignments.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +46,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1d91hfXWXAWIG0hflXaLMcq5RY9" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -54,7 +59,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.traceroute test">
+  <component name="RunManager" selected="Python.DMVPN DHCP Assignments">
     <configuration name="DMVPN DHCP Assignments" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="work" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -119,8 +124,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.anyconnect" />
       <item itemvalue="Python.DMVPN DHCP Assignments" />
+      <item itemvalue="Python.anyconnect" />
       <item itemvalue="Python.traceroute test" />
     </list>
     <recent_temporary>
@@ -170,11 +175,14 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
     <MESSAGE value="added traceroute function" />
-    <option name="LAST_COMMIT_MESSAGE" value="added traceroute function" />
+    <MESSAGE value="oops" />
+    <MESSAGE value="got it" />
+    <option name="LAST_COMMIT_MESSAGE" value="got it" />
   </component>
   <component name="WindowStateProjectService">
     <state x="711" y="135" key="CommitChangelistDialog2" timestamp="1591993832838">

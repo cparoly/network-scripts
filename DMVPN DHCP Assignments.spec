@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['DMVPN DHCP Assignments.py'],
-             pathex=['D:\\Python stuff\\scripts\\work'],
+             pathex=['C:\\Users\\CParoly\\PycharmProjects\\work'],
              binaries=[],
              datas=[],
              hiddenimports=[],
