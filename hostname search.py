@@ -18,19 +18,20 @@ access_vlan_regex = re.compile(r'switchport access vlan (\d*)', re.MULTILINE)
 wb = Workbook()
 ws = wb.active
 
-
+ws['A1'] = 'Hostnames'
 ws['B1'] = 'IPs'
 ws['C1'] = 'Interface'
 ws['D1'] = 'Duplex'
 ws['E1'] = 'Speed'
+ws['F1'] = 'Switch'
 
 user = input("Tacacs username: ")
-pwd = input("Tacacs password" )
+pwd = getpass.getpass("Tacacs password" )
 
 while True:
 	try:
 
-		file = input("What is the path to the excel file?(full path) ")
+		file = input("What is the path to the excel file?(full path): ")
 		book = openpyxl.load_workbook(file)
 		sheet = book.active
 		break
@@ -45,6 +46,19 @@ try:
 except ValueError:
 	distribution = socket.gethostbyname(distribution)
 
+
+	cisco = {
+		'device_type': 'cisco_ios',
+		'host': distribution,
+		'username': user,
+		'password': pwd
+	}
+	try:
+		dist_connect = ConnectHandler(**cisco)
+	except NetMikoAuthenticationException:
+		print("Username/password incorrect")
+
+
 hosts = []
 ips = []
 count = 2
@@ -53,76 +67,153 @@ for column in sheet["A"]:
 	ws.cell(row=count, column=1, value=column.value)
 	count += 1
 
-hosts=iter(hosts)
+hosts = iter(hosts)
 next(hosts)
 
 count = 2
 
 
 def ConnectToDevice(host):
-	print ("Connecting to " + host)
-	cisco = {
+	print("Connecting to " + host)
+	switch = {
 		'device_type': 'cisco_ios',
 		'host': host,
 		'username': user,
 		'password': pwd
 	}
 	try:
-		net_connect = ConnectHandler(**cisco)
+		net_connect = ConnectHandler(**switch)
 	except NetMikoAuthenticationException:
-		print("Username/password incorrect")
+		raise
+
+	except NetMikoTimeoutException:
+		raise
 
 	return net_connect
 
 def GetMac(ip):
-	net_connect = ConnectToDevice()
-	arp = net_connect.send_command("show ip arp " + ip)
+	print('*' * 50)
+	print ('Getting the MAC ADDRESS')
+	arp = dist_connect.send_command("show ip arp " + ip, delay_factor=.2)
 	print(arp)
-	mac = re.match("^[0-9a-f\.]{5}[0-9a-f\.]{5}[0-9a-f]{4}$", arp)
-	return mac
+	mac = re.search(mac_regex, arp)
+	if mac is None:
+		print('No arp entry found')
+		ws.cell(row=count, column=3, value='NONE')
+		return None
+	else:
+		mac = mac.group()
+		return mac
 
-def GetNextSwitch(ip, mac):
-	net_connect = ConnectToDevice(ip)
-	po = net_connect.send_command("show mac address-table address " + mac)
-	po = re.search(int_po_regex, po)
-	interface = net_connect.send_command("show run int " + str(po))
+def GetNextSwitch(mac):
+	print('*' * 50)
+	print ('Getting next switch')
+	int = dist_connect.send_command("show mac address-table address " + mac, delay_factor=.1)
+	po = re.search(int_po_regex, int)
+	print(po)
+	if po is None:
+		po = re.search(int_regex, int)
+
+		if po is None:
+			return None
+		else:
+			po = po.group()
+	else:
+		po = po.group()
+
+	print(po)
+	interface = dist_connect.send_command("show run int " + str(po))
+	print(interface)
 	for description in interface.splitlines():
-		if 'Description:' in description:
-			next_switch = description.split(':')[1].strip()
+		if 'description' in description.lower():
+			next_switch = description.split(' ')
+
+	next_switch = [switch for switch in next_switch if 'ns-s' in switch]
+	next_switch = str(next_switch)[1:-1]
+	next_switch = next_switch.strip("'")
+
+
 
 	return next_switch
 
 
-
-
 def FindAttachedInterface(switch, mac):
-	net_connect = ConnectToDevice(switch)
+	try:
+		net_connect = ConnectToDevice(switch)
+	except NetMikoAuthenticationException:
+		return "Failed to Connect"
+	except NetMikoTimeoutException:
+		return "Failed to Connect"
 	interface = net_connect.send_command("show mac address-table address " + mac)
+	print(interface)
 	int = re.search(int_regex, interface)
+
+	if int is None:
+		int = re.search(r'Po{1}\d*$', interface)
+		if int is None:
+			interface = 'unknown'
+			duplex = 'unknown'
+			speed = 'unknown'
+			return interface, duplex, speed
+		else:
+			int = int.group()
+	else:
+		int = int.group()
+
 	summary = net_connect.send_command("show int " + str(int))
+
 	for media in summary.splitlines():
 		if 'media' in media:
 			duplex = media.split(',')[0].strip()
+			print(duplex)
 			speed = media.split(',')[1].strip()
-
+			print(speed)
+	net_connect.disconnect()
 	return int, duplex, speed
 
 
-for ip in hosts:
+print("Connecting to " + distribution)
 
-	ip = socket.gethostbyname(ip)
+for ip in hosts:
+	try:
+		ip = socket.gethostbyname(ip)
+	except socket.gaierror:
+		print("No Hostname Found")
+		continue
+	print('*' * 50)
+	print(ip)
+	print(count)
 
 	ws.cell(row=count, column=2, value=ip)
 	count += 1
 
 	mac = GetMac(ip)
-	next_switch = GetNextSwitch(ip, mac)
+	print(mac)
+	if mac is None:
+		print('No arp entry found')
+		ws.cell(row=count, column=3, value='NONE')
+		continue
+	switch = GetNextSwitch(mac)
+	if switch is None:
+		print('No interface found---GetNetworkSwitch')
+		ws.cell(row=count, column=3, value='NONE')
+		continue
 
-	print('The host is connected to ' + next_switch)
-	interface, duplex, speed = FindAttachedInterface(next_switch, mac)
+	print(switch)
+	print('The host is connected to ' + switch)
+	if FindAttachedInterface(switch,mac) == 'Failed to Connect':
+		continue
+	interface, duplex, speed = FindAttachedInterface(switch, mac)
+	if interface is None:
+		print('No Interface found----FindAttachedInterface')
+		ws.cell(row=count, column=3, value='NONE')
+		continue
+
 	ws.cell(row=count, column=3, value=interface)
 	ws.cell(row=count, column=4, value=duplex)
 	ws.cell(row=count, column=5, value=speed)
-
-ws.save('host-interfaces.xlsx')
+	ws.cell(row=count, column=6, value=switch)
+	print(interface, duplex, speed)
+wb.save(filename='host-interfaces.xlsx')
+dist_connect.disconnect()
 book.close()
