@@ -27,15 +27,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7f2ec54-ea13-4332-993a-7c3e4c3da9fa" name="Default" comment="added write mem">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/work.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/work.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/DMVPN DHCP Assignments/Analysis-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/DMVPN DHCP Assignments/Analysis-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/DMVPN DHCP Assignments/EXE-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/DMVPN DHCP Assignments/EXE-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/DMVPN DHCP Assignments/PKG-00.pkg" beforeDir="false" afterPath="$PROJECT_DIR$/build/DMVPN DHCP Assignments/PKG-00.pkg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/DMVPN DHCP Assignments/PKG-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/DMVPN DHCP Assignments/PKG-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/DMVPN DHCP Assignments/PYZ-00.pyz" beforeDir="false" afterPath="$PROJECT_DIR$/build/DMVPN DHCP Assignments/PYZ-00.pyz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/DMVPN DHCP Assignments/PYZ-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/DMVPN DHCP Assignments/PYZ-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/DMVPN DHCP Assignments/base_library.zip" beforeDir="false" afterPath="$PROJECT_DIR$/build/DMVPN DHCP Assignments/base_library.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/DMVPN DHCP Assignments.exe" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/hostname search.py" beforeDir="false" afterPath="$PROJECT_DIR$/hostname search.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +80,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="anyconnect" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="crc errors" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="work" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -94,11 +88,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dist" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/anyconnect.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dist/crc errors.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -171,19 +165,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.anyconnect" />
       <item itemvalue="Python.DMVPN DHCP Assignments" />
       <item itemvalue="Python.traceroute test" />
       <item itemvalue="Python.csv test" />
       <item itemvalue="Python.hostname search" />
+      <item itemvalue="Python.crc errors" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.hostname search" />
+        <item itemvalue="Python.crc errors" />
         <item itemvalue="Python.csv test" />
         <item itemvalue="Python.traceroute test" />
         <item itemvalue="Python.DMVPN DHCP Assignments" />
-        <item itemvalue="Python.anyconnect" />
       </list>
     </recent_temporary>
   </component>
@@ -246,31 +240,31 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="711" y="135" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1591996038182" />
-    <state width="1222" height="163" key="GridCell.Tab.0.bottom" timestamp="1593442019784">
-      <screen x="0" y="0" width="1280" height="728" />
+    <state width="1510" height="244" key="GridCell.Tab.0.bottom" timestamp="1593702183161">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1510" height="244" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592104739752" />
+    <state width="1510" height="244" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593702183161" />
     <state width="1510" height="243" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591849603876" />
     <state width="1222" height="163" key="GridCell.Tab.0.bottom/0.0.1280.728/-1920.5.1920.1040@0.0.1280.728" timestamp="1593442019784" />
     <state width="1510" height="244" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593016836902" />
-    <state width="1222" height="163" key="GridCell.Tab.0.center" timestamp="1593442019783">
-      <screen x="0" y="0" width="1280" height="728" />
+    <state width="1510" height="244" key="GridCell.Tab.0.center" timestamp="1593702183161">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1510" height="244" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592104739752" />
+    <state width="1510" height="244" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593702183161" />
     <state width="1510" height="243" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591849603876" />
     <state width="1222" height="163" key="GridCell.Tab.0.center/0.0.1280.728/-1920.5.1920.1040@0.0.1280.728" timestamp="1593442019783" />
     <state width="1510" height="244" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593016836902" />
-    <state width="1222" height="163" key="GridCell.Tab.0.left" timestamp="1593442019783">
-      <screen x="0" y="0" width="1280" height="728" />
+    <state width="1510" height="244" key="GridCell.Tab.0.left" timestamp="1593702183161">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1510" height="244" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592104739752" />
+    <state width="1510" height="244" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593702183161" />
     <state width="1510" height="243" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591849603876" />
     <state width="1222" height="163" key="GridCell.Tab.0.left/0.0.1280.728/-1920.5.1920.1040@0.0.1280.728" timestamp="1593442019783" />
     <state width="1510" height="244" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593016836902" />
-    <state width="1222" height="163" key="GridCell.Tab.0.right" timestamp="1593442019783">
-      <screen x="0" y="0" width="1280" height="728" />
+    <state width="1510" height="244" key="GridCell.Tab.0.right" timestamp="1593702183161">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1510" height="244" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592104739752" />
+    <state width="1510" height="244" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593702183161" />
     <state width="1510" height="243" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591849603876" />
     <state width="1222" height="163" key="GridCell.Tab.0.right/0.0.1280.728/-1920.5.1920.1040@0.0.1280.728" timestamp="1593442019783" />
     <state width="1510" height="244" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593016836902" />
@@ -298,6 +292,14 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2123" y="95" width="1283" height="917" key="dock-window-2/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@-1920.0.1920.1040" timestamp="1593023343168" />
+    <state x="1920" y="0" width="1283" height="917" key="dock-window-4" timestamp="1593700628807">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1920" y="0" width="1283" height="917" key="dock-window-4/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593700628807" />
+    <state x="2036" y="0" width="1283" height="645" key="dock-window-5" timestamp="1593702189908">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2036" y="0" width="1283" height="645" key="dock-window-5/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593702189908" />
     <state x="385" y="160" key="git4idea.merge.GitPullDialog" timestamp="1593186149293">
       <screen x="0" y="0" width="1280" height="728" />
     </state>
