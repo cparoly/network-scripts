@@ -24,6 +24,8 @@ ws['C1'] = 'Interface'
 ws['D1'] = 'Duplex'
 ws['E1'] = 'Speed'
 ws['F1'] = 'Switch'
+ws['G1'] = 'CRC'
+ws['H1'] = 'Input Errors'
 
 user = input("Tacacs username: ")
 pwd = getpass.getpass("Tacacs password" )
@@ -153,7 +155,9 @@ def FindAttachedInterface(switch, mac):
 			interface = 'unknown'
 			duplex = 'unknown'
 			speed = 'unknown'
-			return interface, duplex, speed
+			CRC = 'unknown'
+			input_error = 'unknown'
+			return interface, duplex, speed, CRC, input_error
 		else:
 			int = int.group()
 	else:
@@ -211,7 +215,7 @@ for ip in hosts:
 	print('The host is connected to ' + switch)
 	if FindAttachedInterface(switch,mac) == 'Failed to Connect':
 		continue
-	interface, duplex, speed = FindAttachedInterface(switch, mac)
+	interface, duplex, speed, CRC, input_error = FindAttachedInterface(switch, mac)
 	if interface is None:
 		print('No Interface found----FindAttachedInterface')
 		ws.cell(row=count, column=3, value='NONE')
@@ -222,7 +226,7 @@ for ip in hosts:
 	ws.cell(row=count, column=5, value=speed)
 	ws.cell(row=count, column=6, value=switch)
 	ws.cell(row=count, column=7, value=CRC)
-	ws.cell(row=count, column=7, value=input_error)
+	ws.cell(row=count, column=8, value=input_error)
 
 	print(interface, duplex, speed)
 	print('CRC = ' + CRC, '\nInput Errors = ' + input_error)
