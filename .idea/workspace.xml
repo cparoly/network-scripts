@@ -26,7 +26,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7f2ec54-ea13-4332-993a-7c3e4c3da9fa" name="Default" comment="fixed loop and added more output">
-      <change afterPath="$PROJECT_DIR$/hostname search.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/csv test.py" beforeDir="false" afterPath="$PROJECT_DIR$/csv test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/devices.csv" beforeDir="false" afterPath="$PROJECT_DIR$/devices.csv" afterDir="false" />
@@ -191,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591996038886</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="new hostname search">
+      <created>1593184400035</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1593184400035</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -210,13 +216,14 @@
     <MESSAGE value="test" />
     <MESSAGE value="added traceroute function" />
     <MESSAGE value="fixed loop and added more output" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed loop and added more output" />
+    <MESSAGE value="new hostname search" />
+    <option name="LAST_COMMIT_MESSAGE" value="new hostname search" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="711" y="135" key="CommitChangelistDialog2" timestamp="1591996038182">
+    <state x="711" y="135" key="CommitChangelistDialog2" timestamp="1593184399158">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="711" y="135" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1591996038182" />
+    <state x="711" y="135" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593184399158" />
     <state width="1510" height="244" key="GridCell.Tab.0.bottom" timestamp="1593016836902">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -246,14 +253,14 @@
     </state>
     <state x="377" y="232" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1591995758352" />
     <state x="2297" y="232" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591847389974" />
-    <state x="676" y="305" width="1097" height="534" key="Vcs.Push.Dialog.v2" timestamp="1591996225869">
+    <state x="676" y="305" width="1097" height="534" key="Vcs.Push.Dialog.v2" timestamp="1593184864275">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="676" y="305" width="1097" height="534" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1591996225869" />
-    <state x="730" y="450" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1591996048242">
+    <state x="676" y="305" width="1097" height="534" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593184864275" />
+    <state x="730" y="450" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593184410045">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="730" y="450" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1591996048242" />
+    <state x="730" y="450" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593184410045" />
     <state x="2103" y="131" width="1283" height="917" key="dock-window-1" timestamp="1593182992825">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -265,5 +272,13 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2123" y="95" width="1283" height="917" key="dock-window-2/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@-1920.0.1920.1040" timestamp="1593023343168" />
+    <state x="1920" y="0" width="1283" height="917" key="dock-window-3" timestamp="1593451367015">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1920" y="0" width="1283" height="917" key="dock-window-3/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593451367015" />
+    <state x="610" y="289" key="git4idea.merge.GitPullDialog" timestamp="1593699920073">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="610" y="289" key="git4idea.merge.GitPullDialog/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593699920073" />
   </component>
 </project>
