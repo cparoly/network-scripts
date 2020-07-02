@@ -64,7 +64,6 @@ ips = []
 count = 2
 for column in sheet["A"]:
 	hosts.append(column.value)
-	ws.cell(row=count, column=1, value=column.value)
 	count += 1
 
 hosts = iter(hosts)
@@ -165,16 +164,25 @@ def FindAttachedInterface(switch, mac):
 	for media in summary.splitlines():
 		if 'media' in media:
 			duplex = media.split(',')[0].strip()
-			print(duplex)
 			speed = media.split(',')[1].strip()
-			print(speed)
+
+	for errors in summary.splitlines():
+		if 'CRC' in errors:
+			error = errors.split(',')
+			CRC = error[1]
+			input_error = error[0]
+			CRC = CRC.strip()
+			CRC = CRC[0]
+			input_error = input_error.strip()
+			input_error = input_error[0]
 	net_connect.disconnect()
-	return int, duplex, speed
+	return int, duplex, speed, CRC, input_error
 
 
 print("Connecting to " + distribution)
 
 for ip in hosts:
+	ws.cell(row=count, column=1, value=ip)
 	try:
 		ip = socket.gethostbyname(ip)
 	except socket.gaierror:
@@ -213,7 +221,11 @@ for ip in hosts:
 	ws.cell(row=count, column=4, value=duplex)
 	ws.cell(row=count, column=5, value=speed)
 	ws.cell(row=count, column=6, value=switch)
+	ws.cell(row=count, column=7, value=CRC)
+	ws.cell(row=count, column=7, value=input_error)
+
 	print(interface, duplex, speed)
+	print('CRC = ' + CRC, '\nInput Errors = ' + input_error)
 wb.save(filename='host-interfaces.xlsx')
 dist_connect.disconnect()
 book.close()
