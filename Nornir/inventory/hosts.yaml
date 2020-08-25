@@ -1,0 +1,45 @@
+tp16n0sc1:
+    hostname: 10.1.1.2
+    platform: HP LaserJet 4000 Series PCL 5
+    group:
+        - Nursing Admin
+tp16n0sc2:
+    hostname: 10.1.1.3
+    platform: HP LaserJet 4000 Series PCL 5
+    group:
+        - Lobby
+tp16n0sc3:
+    hostname: 10.1.1.4
+    platform: HP LaserJet 4000 Series PCL 5
+    group:
+        - Lab2
+tp16n0sc4:
+    hostname: 10.1.1.5
+    platform: HP LaserJet 4000 Series PCL 5
+    group:
+        - Nursing Admin
+tp16n0sc5:
+    hostname: 10.1.1.6
+    platform: HP LaserJet 4000 Series PCL 5
+    group:
+        - Lobby
+tp16n0sc6:
+    hostname: 10.1.1.7
+    platform: HP LaserJet 4000 Series PCL 5
+    group:
+        - Lab2
+tp16n0sc7:
+    hostname: 10.1.1.8
+    platform: HP LaserJet 4000 Series PCL 5
+    group:
+        - Nursing Admin
+tp16n0sc8:
+    hostname: 10.1.1.9
+    platform: HP LaserJet 4000 Series PCL 5
+    group:
+        - Lobby
+tp16n0sc9:
+    hostname: 10.1.1.10
+    platform: HP LaserJet 4000 Series PCL 5
+    group:
+        - Lab3

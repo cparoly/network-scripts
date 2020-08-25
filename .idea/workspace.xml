@@ -26,9 +26,19 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7f2ec54-ea13-4332-993a-7c3e4c3da9fa" name="Default" comment="fixed code">
+    <list default="true" id="f7f2ec54-ea13-4332-993a-7c3e4c3da9fa" name="Default" comment="added search for errors">
+      <change afterPath="$PROJECT_DIR$/Nornir/csv to inventory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Nornir/inventory/config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Nornir/inventory/defaults.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Nornir/inventory/groups.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Nornir/inventory/hosts.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Nornir/printers-online.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mac test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/printer-ping.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/work.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/work.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mac Search.py" beforeDir="false" afterPath="$PROJECT_DIR$/Mac Search.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devices.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/devices.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,17 +56,28 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1d91hfXWXAWIG0hflXaLMcq5RY9" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.Mac Search">
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="work" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="work" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.printer-ping">
     <configuration name="Mac Search" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="work" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -78,7 +99,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="crc errors" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="csv to inventory" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="work" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -86,32 +107,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dist" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Nornir" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dist/crc errors.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="csv test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="work" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/csv test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Nornir/csv to inventory.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -141,7 +141,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="traceroute test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="mac test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="work" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -153,7 +153,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/traceroute test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mac test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="printer-ping" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="work" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/printer-ping.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -163,19 +184,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.traceroute test" />
-      <item itemvalue="Python.csv test" />
-      <item itemvalue="Python.hostname search" />
-      <item itemvalue="Python.crc errors" />
       <item itemvalue="Python.Mac Search" />
+      <item itemvalue="Python.hostname search" />
+      <item itemvalue="Python.csv to inventory" />
+      <item itemvalue="Python.printer-ping" />
+      <item itemvalue="Python.mac test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.printer-ping" />
+        <item itemvalue="Python.mac test" />
+        <item itemvalue="Python.csv to inventory" />
         <item itemvalue="Python.Mac Search" />
         <item itemvalue="Python.hostname search" />
-        <item itemvalue="Python.crc errors" />
-        <item itemvalue="Python.csv test" />
-        <item itemvalue="Python.traceroute test" />
       </list>
     </recent_temporary>
   </component>
@@ -251,47 +272,52 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="711" y="135" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1591996038182" />
-    <state width="1579" height="258" key="GridCell.Tab.0.bottom" timestamp="1597936398265">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1666" height="134" key="GridCell.Tab.0.bottom" timestamp="1598390590242">
+      <screen x="0" y="0" width="3840" height="1040" />
     </state>
     <state width="1510" height="244" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593702183161" />
     <state width="1510" height="243" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591849603876" />
     <state width="1222" height="163" key="GridCell.Tab.0.bottom/0.0.1280.728/-1920.5.1920.1040@0.0.1280.728" timestamp="1593442019784" />
     <state width="1510" height="244" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593016836902" />
     <state width="1579" height="258" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597936398265" />
-    <state width="1579" height="258" key="GridCell.Tab.0.center" timestamp="1597936398265">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1666" height="134" key="GridCell.Tab.0.bottom/0.0.3840.1040/1910.-1083.1920.1040/-10.-1080.1920.1040@0.0.3840.1040" timestamp="1598390590242" />
+    <state width="1666" height="134" key="GridCell.Tab.0.center" timestamp="1598390590242">
+      <screen x="0" y="0" width="3840" height="1040" />
     </state>
     <state width="1510" height="244" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593702183161" />
     <state width="1510" height="243" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591849603876" />
     <state width="1222" height="163" key="GridCell.Tab.0.center/0.0.1280.728/-1920.5.1920.1040@0.0.1280.728" timestamp="1593442019783" />
     <state width="1510" height="244" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593016836902" />
     <state width="1579" height="258" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597936398265" />
-    <state width="1579" height="258" key="GridCell.Tab.0.left" timestamp="1597936398265">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1666" height="134" key="GridCell.Tab.0.center/0.0.3840.1040/1910.-1083.1920.1040/-10.-1080.1920.1040@0.0.3840.1040" timestamp="1598390590242" />
+    <state width="1666" height="134" key="GridCell.Tab.0.left" timestamp="1598390590242">
+      <screen x="0" y="0" width="3840" height="1040" />
     </state>
     <state width="1510" height="244" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593702183161" />
     <state width="1510" height="243" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591849603876" />
     <state width="1222" height="163" key="GridCell.Tab.0.left/0.0.1280.728/-1920.5.1920.1040@0.0.1280.728" timestamp="1593442019783" />
     <state width="1510" height="244" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593016836902" />
     <state width="1579" height="258" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597936398265" />
-    <state width="1579" height="258" key="GridCell.Tab.0.right" timestamp="1597936398265">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1666" height="134" key="GridCell.Tab.0.left/0.0.3840.1040/1910.-1083.1920.1040/-10.-1080.1920.1040@0.0.3840.1040" timestamp="1598390590242" />
+    <state width="1666" height="134" key="GridCell.Tab.0.right" timestamp="1598390590242">
+      <screen x="0" y="0" width="3840" height="1040" />
     </state>
     <state width="1510" height="244" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593702183161" />
     <state width="1510" height="243" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591849603876" />
     <state width="1222" height="163" key="GridCell.Tab.0.right/0.0.1280.728/-1920.5.1920.1040@0.0.1280.728" timestamp="1593442019783" />
     <state width="1510" height="244" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593016836902" />
     <state width="1579" height="258" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597936398265" />
+    <state width="1666" height="134" key="GridCell.Tab.0.right/0.0.3840.1040/1910.-1083.1920.1040/-10.-1080.1920.1040@0.0.3840.1040" timestamp="1598390590242" />
     <state x="32" y="67" key="MergeDialog" timestamp="1597936334035">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="32" y="67" key="MergeDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597936334035" />
-    <state x="377" y="232" key="SettingsEditor" timestamp="1591995758352">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="754" y="232" key="SettingsEditor" timestamp="1598389876016">
+      <screen x="0" y="0" width="3840" height="1040" />
     </state>
     <state x="377" y="232" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1591995758352" />
     <state x="2297" y="232" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591847389974" />
+    <state x="754" y="232" key="SettingsEditor/0.0.3840.1040/1910.-1083.1920.1040/-10.-1080.1920.1040@0.0.3840.1040" timestamp="1598389876016" />
     <state x="676" y="305" width="1097" height="534" key="Vcs.Push.Dialog.v2" timestamp="1591996225869">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -301,13 +327,14 @@
     </state>
     <state x="730" y="450" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1591996048242" />
     <state x="730" y="450" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597936303459" />
-    <state x="2103" y="131" width="1283" height="917" key="dock-window-1" timestamp="1593182992825">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="2102" y="0" width="1424" height="782" key="dock-window-1" timestamp="1598386820507">
+      <screen x="0" y="0" width="3840" height="1040" />
     </state>
     <state x="2103" y="131" width="1283" height="917" key="dock-window-1/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593182992825" />
     <state x="2014" y="0" width="1283" height="917" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@-1920.0.1920.1040" timestamp="1593020911132" />
     <state x="-1581" y="87" width="1283" height="917" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593034303546" />
     <state x="-1581" y="87" width="1283" height="917" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1593101310800" />
+    <state x="2102" y="0" width="1424" height="782" key="dock-window-1/0.0.3840.1040/1910.-1083.1920.1040/-10.-1080.1920.1040@0.0.3840.1040" timestamp="1598386820507" />
     <state x="2123" y="95" width="1283" height="917" key="dock-window-2" timestamp="1593023343168">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
