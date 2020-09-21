@@ -1,0 +1,7 @@
+ip access-list standard nslij06
+no deny any
+permit 10.1.1.1
+permit 10.1.1.2
+deny any
+end
+wr
