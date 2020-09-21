@@ -5,19 +5,19 @@ import re
 from mac_vendor_lookup import MacLookup
 
 vendor_lookup = MacLookup()
-book = openpyxl.load_workbook("devices.xlsx")
+book = openpyxl.load_workbook("Copy of Results 10.156.x.xlsx")
 sheet = book.active
-sheet["F1"] = "Status"
-sheet["G1"] = "MAC"
-sheet["H1"] = "Vendor"
+sheet["G1"] = "Status"
+sheet["H1"] = "MAC"
+sheet["I1"] = "Vendor"
 hosts = []
 count = 2
 mac_regex = re.compile(r'[0-9a-f]{4}\.[0-9a-f]{4}\.[0-9a-f]{4}')
 switch = {
 	'device_type': 'cisco_ios',
-	'host': "172.16.1.3",
-	'username': "test",
-	'password': "test"
+	'host': "10.156.24.254",
+	'username': "cparoly",
+	'password': "blackbird.1"
 }
 try:
 	dist_connect = ConnectHandler(**switch)
@@ -37,17 +37,20 @@ for ip in hosts:
 	mac = re.search(mac_regex, arp)
 
 	if mac is not None:
-		sheet.cell(row=count, column = 6, value="Online")
+		sheet.cell(row=count, column = 7, value="Online")
 		mac = mac.group()
-		sheet.cell(row=count, column = 7, value= mac)
+		sheet.cell(row=count, column = 8, value= mac)
 		vendor = vendor_lookup.lookup(mac)
-		sheet.cell(row=count, column= 8, value = vendor)
+		sheet.cell(row=count, column= 9, value = vendor)
 		count += 1
+		print(count)
+
 
 	else:
-		sheet.cell(row=count, column = 6, value="Inactive")
+		sheet.cell(row=count, column = 7, value="Inactive")
 		count += 1
+		print(count)
 
-book.save("devices.xlsx")
+book.save("Copy of Results 10.156.x.xlsx")
 	
 
