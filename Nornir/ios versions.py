@@ -36,7 +36,7 @@ for host in show:
 	if "Nexus" in IOS:
 		sheet.cell(row=row, column=6, value="Nexus")
 	elif "Internetwork" in IOS:
-		sheet.cell(row=row, column=6, value="IOS")
+		sheet.cell(row=row, column=6, value="Internetwork")
 	elif "IOS-XE" or "XE" in IOS:
 		sheet.cell(row=row, column=6, value="IOS-XE")
 	elif "Adaptive Security Appliance" in IOS:

@@ -1,20 +1,19 @@
-import csv
-import yaml
+import openpyxl
 
-hosts = open(r'D:\Python stuff\scripts\work\Nornir\inventory\hosts.yaml', 'w')
+hosts = open(r'C:\Users\CParoly\PycharmProjects\work\Nornir\inventory\hosts.yaml', 'w')
 hosts.write('---')
-with open('devices.csv') as f:
-	csv_2_yaml = csv.reader(f)
-	next(csv_2_yaml)
-	for row in csv_2_yaml:
+wb = openpyxl.load_workbook("network devices.xlsx")
+ws = wb.active
+count = 16
+for row in ws.rows:
 
-		device = row[1]
-		ip = row[2]
-		platform = row[3]
-		location = row[4]
-		hosts.write("\n{0}:\n    hostname: {1}\n    groups:\n        - {2}\n"
-			.format(device, ip, platform, location))
+	device = ws.cell(row=count, column=3).value
+	ip = ws.cell(row=count, column=5).value
+	platform = ws.cell(row=count, column=2).value
 
+	hosts.write("\n{0}:\n    hostname: {1}\n    groups:\n        - {2}\n"
+				.format(device, ip, platform))
+	count += 1
 
 hosts.close()
 
