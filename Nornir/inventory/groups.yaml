@@ -1,5 +1,35 @@
 ---
-cisco:
-    platform: ios
-    username: test
-    password: test
+Firewall:
+    platform: cisco_asa_ssh
+    username: cparoly
+    password: blackbird.1
+
+Switch:
+    platform: cisco_ios
+    username: cparoly
+    password: blackbird.1
+
+Router:
+    platform: cisco_ios
+    username: cparoly
+    password: blackbird.1
+
+Palo Alto:
+    platform: paloalto_panos
+    username: cparoly
+    password: blackbird.1
+
+Wireless LAN Controller:
+    platform: cisco_wlc
+    username: cparoly
+    password: blackbird.1
+
+Test:
+    platform: cisco_ios
+    username: cparoly
+    password: blackbird.1
+
+Load Balancer:
+    platform: netscaler
+    username: cparoly
+    password: blackbird.1
