@@ -19,24 +19,24 @@ nr = InitNornir(core={"num_workers": 100},
                     }
                 }
                 )
-wb = openpyxl.load_workbook("MIT-s-r-done.xlsx")
+wb = openpyxl.load_workbook("HH-s-r-todo.xlsx")
 ws = wb.active
 ws["A1"] = "Hosts"
 row = 2
-MIT_router = nr.filter(site='MIT').filter(F(groups__contains='Router'))
-MIT_switch = nr.filter(site='MIT').filter(F(groups__contains='Switch'))
-MIT_asa = nr.filter(site='MIT').filter(type='ASA').filter(F(groups__contains='Firewall'))
+HH_nexus = nr.filter(site='Huntington Hospital').filter(type='Cisco NX OS').inventory.hosts.keys()
+HH_ios = nr.filter(site='Huntington Hospital').filter(type='Cisco IOS - SSH Capable').inventory.hosts.keys()
+HH_inter = nr.filter(site='Huntington Hospital').filter(type='Internetwork').inventory.hosts.keys()
 
-for host in MIT_router:
+for host in HH_nexus:
     ws.cell(row=row, column=1, value=host)
     row += 1
 
-for host in MIT_switch:
+for host in HH_ios:
     ws.cell(row=row, column=1, value=host)
     row += 1
 
-for host in MIT_asa:
+for host in HH_inter:
     ws.cell(row=row, column=1, value=host)
     row += 1
 
-wb.save("MIT-s-r-done.xlsx")
+wb.save("HH-s-r-todo.xlsx")
