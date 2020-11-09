@@ -29,6 +29,7 @@
     <list default="true" id="f7f2ec54-ea13-4332-993a-7c3e4c3da9fa" name="Default" comment="snmp changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Nornir/config changes.py" beforeDir="false" afterPath="$PROJECT_DIR$/Nornir/config changes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nornir/inventory/groups.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Nornir/inventory/groups.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Nornir/snmp list.py" beforeDir="false" afterPath="$PROJECT_DIR$/Nornir/snmp list.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +46,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Nornir/inventory/hosts.yaml" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1d91hfXWXAWIG0hflXaLMcq5RY9" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -69,7 +73,7 @@
       </console-settings>
     </option>
   </component>
-  <component name="RunManager" selected="Python.snmp list">
+  <component name="RunManager" selected="Python.config changes">
     <configuration name="config changes" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="work" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -184,8 +188,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.snmp list" />
         <item itemvalue="Python.config changes" />
+        <item itemvalue="Python.snmp list" />
         <item itemvalue="Python.csv to inventory" />
         <item itemvalue="Python.ios versions" />
         <item itemvalue="Python.printer-ping" />
@@ -254,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601583712055</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="snmp changes">
+      <created>1603204256951</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1603204256951</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -294,42 +305,43 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="614" y="284" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600972495209" />
-    <state width="1579" height="88" key="GridCell.Tab.0.bottom" timestamp="1603139032411">
+    <state width="1899" height="315" key="GridCell.Tab.0.bottom" timestamp="1604703883078">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1579" height="88" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603139032411" />
+    <state width="1899" height="315" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604703883078" />
     <state width="1579" height="273" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601654774800" />
-    <state width="1579" height="600" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602258565543" />
+    <state width="1899" height="315" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604631809629" />
     <state width="1666" height="134" key="GridCell.Tab.0.bottom/0.0.3840.1040/1910.-1083.1920.1040/-10.-1080.1920.1040@0.0.3840.1040" timestamp="1598390590242" />
-    <state width="1579" height="88" key="GridCell.Tab.0.center" timestamp="1603139032411">
+    <state width="1899" height="315" key="GridCell.Tab.0.center" timestamp="1604703883078">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1579" height="88" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603139032411" />
+    <state width="1899" height="315" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604703883078" />
     <state width="1579" height="273" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601654774800" />
-    <state width="1579" height="600" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602258565543" />
+    <state width="1899" height="315" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604631809629" />
     <state width="1666" height="134" key="GridCell.Tab.0.center/0.0.3840.1040/1910.-1083.1920.1040/-10.-1080.1920.1040@0.0.3840.1040" timestamp="1598390590242" />
-    <state width="1579" height="88" key="GridCell.Tab.0.left" timestamp="1603139032411">
+    <state width="1899" height="315" key="GridCell.Tab.0.left" timestamp="1604703883078">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1579" height="88" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603139032411" />
+    <state width="1899" height="315" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604703883078" />
     <state width="1579" height="273" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601654774800" />
-    <state width="1579" height="600" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602258565542" />
+    <state width="1899" height="315" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604631809629" />
     <state width="1666" height="134" key="GridCell.Tab.0.left/0.0.3840.1040/1910.-1083.1920.1040/-10.-1080.1920.1040@0.0.3840.1040" timestamp="1598390590242" />
-    <state width="1579" height="88" key="GridCell.Tab.0.right" timestamp="1603139032411">
+    <state width="1899" height="315" key="GridCell.Tab.0.right" timestamp="1604703883078">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1579" height="88" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603139032411" />
+    <state width="1899" height="315" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604703883078" />
     <state width="1579" height="273" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601654774800" />
-    <state width="1579" height="600" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602258565543" />
+    <state width="1899" height="315" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604631809629" />
     <state width="1666" height="134" key="GridCell.Tab.0.right/0.0.3840.1040/1910.-1083.1920.1040/-10.-1080.1920.1040@0.0.3840.1040" timestamp="1598390590242" />
     <state x="32" y="67" key="MergeDialog" timestamp="1597936334035">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="32" y="67" key="MergeDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597936334035" />
-    <state x="377" y="232" key="SettingsEditor" timestamp="1600978787918">
+    <state x="377" y="232" key="SettingsEditor" timestamp="1604630206154">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="377" y="232" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600978787918" />
+    <state x="377" y="232" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604630206154" />
     <state x="754" y="232" key="SettingsEditor/0.0.3840.1040/1910.-1083.1920.1040/-10.-1080.1920.1040@0.0.3840.1040" timestamp="1598389876016" />
     <state x="730" y="450" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600709809716">
       <screen x="0" y="0" width="1920" height="1040" />
