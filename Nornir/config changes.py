@@ -4,6 +4,10 @@ from nornir.plugins.tasks.networking import netmiko_send_config
 from nornir.core.filter import F
 import openpyxl
 from tqdm import tqdm
+import getpass
+
+username = input("Enter your tacacs username: ")
+password = getpass.getpass(prompt="Enter your tacacs password: ")
 
 wb = openpyxl.load_workbook("all devices Spectrum.xlsx")
 ws = wb.active
@@ -16,7 +20,7 @@ def print_hospitals():
     print('1. Forest Hills Hospital')
     print('2. Glen Cove Hospital')
     print('3. Huntington Hospital')
-    print('4. "LHH')
+    print('4. LHH')
     print('5. LIJ')
     print('6. Mather Hospital')
     print('7. MEETH')
@@ -44,16 +48,16 @@ nr = InitNornir(core={"num_workers": 50},
                     }
                 }
                 )
+nr.inventory.defaults.username = username
+nr.inventory.defaults.password = password
 
 
-def results_file(results):
-    for host in results:
-        print(host)
-        if host is not None:
-            f = open(f"{host}.txt", "w")
-            f.write(results[host].result)
-        else:
-            print("None value for some reason")
+def results_file(completed):
+    for host in completed:
+        f = open(f"{host}.txt", "w")
+        f.write(str(completed[host].result[0]))
+    else:
+        print("none")
 
 
 def to_excel(device):
@@ -81,13 +85,13 @@ while True:
     count = input('How many sites are you updating? (1-3): ')
     count = int(count)
     if count == 1:
-        selection = input("Please choose which hospital to update from the list above by their number: ")
+        selection = input("Please choose which location to update from the list above by their number: ")
         selection = hospitals[int(selection) - 1]
         print('The following will be updated ' + selection)
         location = nr.filter(F(site=selection))
         break
     elif count == 2:
-        selection1 = input("Please choose the first hospital to update from the list above by their number: ")
+        selection1 = input("Please choose the first location to update from the list above by their number: ")
         selection1 = hospitals[int(selection1) - 1]
         selection2 = input("Select the second hospital: ")
         selection2 = hospitals[int(selection2) - 1]
@@ -95,7 +99,7 @@ while True:
         location = nr.filter(F(site=selection1) | F(site=selection2))
         break
     elif count == 3:
-        selection1 = input("Please choose the first hospital to update from the list above by their number: ")
+        selection1 = input("Please choose the first location to update from the list above by their number: ")
         selection1 = hospitals[int(selection1) - 1]
         selection2 = input("Select the second hospital: ")
         selection2 = hospitals[int(selection2) - 1]
@@ -108,9 +112,7 @@ while True:
         print("Invalid input")
         continue
 
-#devices = location.filter(F(type="Cisco IOS - SSH Capable") | F(type="Cisco NX OS") | F(type="Telnet"))
-devices = location.filter(F(type="Cisco IOS - SSH Capable"))
-
+devices = location.filter(F(type="Cisco IOS - SSH Capable") | F(type="Cisco NX OS") | F(type="Telnet"))
 
 with tqdm(total=len(devices.inventory.hosts), desc="Updating  ") as progress_bar:
     complete = devices.run(task=updates, progress=progress_bar)
@@ -119,5 +121,3 @@ print_result(complete)
 to_excel(complete)
 wb.save('all devices Spectrum.xlsx')
 results_file(complete)
-
-

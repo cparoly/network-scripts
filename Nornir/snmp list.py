@@ -4,16 +4,18 @@ from nornir.core.filter import F
 import openpyxl
 from openpyxl import Workbook
 
+
 nr = InitNornir(core={"num_workers": 100},
                 inventory={
                     "plugin": "nornir.plugins.inventory.simple.SimpleInventory",
                     "options": {
                         "host_file": "inventory/hosts.yaml",
                         "group_file": "inventory/groups.yaml",
-                        "default_file": "inventory/defaults.yaml"
+                        "defaults_file": "inventory/defaults.yaml"
                     }
                 }
                 )
+
 wb = Workbook()
 
 file = input("Enter the name for the excel spreadsheet: ")
@@ -32,7 +34,7 @@ def print_hospitals():
     print('1. Forest Hills Hospital')
     print('2. Glen Cove Hospital')
     print('3. Huntington Hospital')
-    print('4. "LHH')
+    print('4. LHH')
     print('5. LIJ')
     print('6. Mather Hospital')
     print('7. MEETH')
@@ -56,13 +58,13 @@ while True:
     count = input('How many sites are you updating? (1-3): ')
     count = int(count)
     if count == 1:
-        selection = input("Please choose which hospital to update from the list above by their number: ")
+        selection = input("Please choose which location to update from the list above by their number: ")
         selection = hospitals[int(selection) - 1]
         print('The following will be updated ' + selection)
         location = nr.filter(F(site=selection))
         break
     elif count == 2:
-        selection1 = input("Please choose the first hospital to update from the list above by their number: ")
+        selection1 = input("Please choose the first location to update from the list above by their number: ")
         selection1 = hospitals[int(selection1) - 1]
         selection2 = input("Select the second hospital: ")
         selection2 = hospitals[int(selection2) - 1]
@@ -70,7 +72,7 @@ while True:
         location = nr.filter(F(site=selection1) | F(site=selection2))
         break
     elif count == 3:
-        selection1 = input("Please choose the first hospital to update from the list above by their number: ")
+        selection1 = input("Please choose the first location to update from the list above by their number: ")
         selection1 = hospitals[int(selection1) - 1]
         selection2 = input("Select the second hospital: ")
         selection2 = hospitals[int(selection2) - 1]
