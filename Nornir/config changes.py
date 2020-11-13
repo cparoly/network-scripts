@@ -77,6 +77,7 @@ def updates(task, progress):
     file_name = task.host.get('img')
     result = task.run(task=netmiko_send_config, config_file=file_name, delay_factor=2, max_loops=400)
     progress.update()
+    return result
 
 
 print(print_hospitals())

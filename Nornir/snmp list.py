@@ -1,7 +1,5 @@
 from nornir import InitNornir
-from nornir.plugins.functions.text import print_result
 from nornir.core.filter import F
-import openpyxl
 from openpyxl import Workbook
 
 
@@ -86,6 +84,7 @@ while True:
         continue
 print('--' * 40)
 devices = location.filter(F(type="Cisco IOS - SSH Capable") | F(type="Cisco NX OS") | F(type="Telnet")).inventory.hosts.keys()
+
 
 for device in devices:
     print(device)
