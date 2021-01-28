@@ -27,18 +27,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7f2ec54-ea13-4332-993a-7c3e4c3da9fa" name="Default" comment="added search for errors">
-      <change afterPath="$PROJECT_DIR$/Nornir/csv to inventory.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nornir/inventory/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nornir/inventory/defaults.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nornir/inventory/groups.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nornir/inventory/hosts.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nornir/printers-online.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mac test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/printer-ping.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Azure/vnets.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Nornir/edit host file.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Nornir/exec timeout.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Nornir/filter test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Nornir/firewall.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Nornir/interconnect.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Nornir/netmiko-test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Nornir/nexus.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Nornir/usernames.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/work.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/work.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devices.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/devices.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nornir/config changes.py" beforeDir="false" afterPath="$PROJECT_DIR$/Nornir/config changes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nornir/config-file.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Nornir/config-file.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nornir/csv to inventory.py" beforeDir="false" afterPath="$PROJECT_DIR$/Nornir/csv to inventory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nornir/inventory/groups.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Nornir/inventory/groups.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nornir/printers-online.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,10 +69,13 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Nornir/inventory" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.YAML" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -77,29 +85,17 @@
       </console-settings>
     </option>
   </component>
-  <component name="RunManager" selected="Python.printer-ping">
-    <configuration name="Mac Search" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="work" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Mac Search.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="csv to inventory" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Python stuff\scripts\work\Nornir\inventory" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Python stuff\scripts\work\Nornir\inventory" />
+      <recent name="D:\Python stuff\scripts\work\Nornir" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.usernames">
+    <configuration name="edit host file" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="work" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -111,7 +107,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Nornir/csv to inventory.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Nornir/edit host file.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -120,7 +116,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="hostname search" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="filter test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="work" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -128,11 +124,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Nornir" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hostname search.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Nornir/filter test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -141,7 +137,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="mac test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="napalm-test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="work" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -149,11 +145,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Nornir" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mac test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Nornir/napalm-test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -162,7 +158,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="printer-ping" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="netmiko-test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="work" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -170,11 +166,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Nornir" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/printer-ping.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Nornir/netmiko-test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="usernames" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="work" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Nornir" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Nornir/usernames.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -184,19 +201,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Mac Search" />
-      <item itemvalue="Python.hostname search" />
-      <item itemvalue="Python.csv to inventory" />
-      <item itemvalue="Python.printer-ping" />
-      <item itemvalue="Python.mac test" />
+      <item itemvalue="Python.napalm-test" />
+      <item itemvalue="Python.netmiko-test" />
+      <item itemvalue="Python.usernames" />
+      <item itemvalue="Python.edit host file" />
+      <item itemvalue="Python.filter test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.printer-ping" />
-        <item itemvalue="Python.mac test" />
-        <item itemvalue="Python.csv to inventory" />
-        <item itemvalue="Python.Mac Search" />
-        <item itemvalue="Python.hostname search" />
+        <item itemvalue="Python.usernames" />
+        <item itemvalue="Python.edit host file" />
+        <item itemvalue="Python.filter test" />
+        <item itemvalue="Python.netmiko-test" />
+        <item itemvalue="Python.napalm-test" />
       </list>
     </recent_temporary>
   </component>
@@ -234,7 +251,21 @@
       <option name="project" value="LOCAL" />
       <updated>1591996038886</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added search for errors">
+      <created>1598390783159</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1598390783160</updated>
+    </task>
+    <task id="LOCAL-00005" summary="nornir">
+      <created>1600709482513</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1600709482513</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -265,91 +296,8 @@
     <MESSAGE value="test" />
     <MESSAGE value="added traceroute function" />
     <MESSAGE value="fixed loop and added more output" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed loop and added more output" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="711" y="135" key="CommitChangelistDialog2" timestamp="1591996038182">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="711" y="135" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1591996038182" />
-    <state width="1666" height="134" key="GridCell.Tab.0.bottom" timestamp="1598390590242">
-      <screen x="0" y="0" width="3840" height="1040" />
-    </state>
-    <state width="1510" height="244" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593702183161" />
-    <state width="1510" height="243" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591849603876" />
-    <state width="1222" height="163" key="GridCell.Tab.0.bottom/0.0.1280.728/-1920.5.1920.1040@0.0.1280.728" timestamp="1593442019784" />
-    <state width="1510" height="244" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593016836902" />
-    <state width="1579" height="258" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597936398265" />
-    <state width="1666" height="134" key="GridCell.Tab.0.bottom/0.0.3840.1040/1910.-1083.1920.1040/-10.-1080.1920.1040@0.0.3840.1040" timestamp="1598390590242" />
-    <state width="1666" height="134" key="GridCell.Tab.0.center" timestamp="1598390590242">
-      <screen x="0" y="0" width="3840" height="1040" />
-    </state>
-    <state width="1510" height="244" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593702183161" />
-    <state width="1510" height="243" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591849603876" />
-    <state width="1222" height="163" key="GridCell.Tab.0.center/0.0.1280.728/-1920.5.1920.1040@0.0.1280.728" timestamp="1593442019783" />
-    <state width="1510" height="244" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593016836902" />
-    <state width="1579" height="258" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597936398265" />
-    <state width="1666" height="134" key="GridCell.Tab.0.center/0.0.3840.1040/1910.-1083.1920.1040/-10.-1080.1920.1040@0.0.3840.1040" timestamp="1598390590242" />
-    <state width="1666" height="134" key="GridCell.Tab.0.left" timestamp="1598390590242">
-      <screen x="0" y="0" width="3840" height="1040" />
-    </state>
-    <state width="1510" height="244" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593702183161" />
-    <state width="1510" height="243" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591849603876" />
-    <state width="1222" height="163" key="GridCell.Tab.0.left/0.0.1280.728/-1920.5.1920.1040@0.0.1280.728" timestamp="1593442019783" />
-    <state width="1510" height="244" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593016836902" />
-    <state width="1579" height="258" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597936398265" />
-    <state width="1666" height="134" key="GridCell.Tab.0.left/0.0.3840.1040/1910.-1083.1920.1040/-10.-1080.1920.1040@0.0.3840.1040" timestamp="1598390590242" />
-    <state width="1666" height="134" key="GridCell.Tab.0.right" timestamp="1598390590242">
-      <screen x="0" y="0" width="3840" height="1040" />
-    </state>
-    <state width="1510" height="244" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593702183161" />
-    <state width="1510" height="243" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591849603876" />
-    <state width="1222" height="163" key="GridCell.Tab.0.right/0.0.1280.728/-1920.5.1920.1040@0.0.1280.728" timestamp="1593442019783" />
-    <state width="1510" height="244" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593016836902" />
-    <state width="1579" height="258" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597936398265" />
-    <state width="1666" height="134" key="GridCell.Tab.0.right/0.0.3840.1040/1910.-1083.1920.1040/-10.-1080.1920.1040@0.0.3840.1040" timestamp="1598390590242" />
-    <state x="32" y="67" key="MergeDialog" timestamp="1597936334035">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="32" y="67" key="MergeDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597936334035" />
-    <state x="754" y="232" key="SettingsEditor" timestamp="1598389876016">
-      <screen x="0" y="0" width="3840" height="1040" />
-    </state>
-    <state x="377" y="232" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1591995758352" />
-    <state x="2297" y="232" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591847389974" />
-    <state x="754" y="232" key="SettingsEditor/0.0.3840.1040/1910.-1083.1920.1040/-10.-1080.1920.1040@0.0.3840.1040" timestamp="1598389876016" />
-    <state x="676" y="305" width="1097" height="534" key="Vcs.Push.Dialog.v2" timestamp="1591996225869">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="676" y="305" width="1097" height="534" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1591996225869" />
-    <state x="730" y="450" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597936303459">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="730" y="450" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1591996048242" />
-    <state x="730" y="450" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597936303459" />
-    <state x="2102" y="0" width="1424" height="782" key="dock-window-1" timestamp="1598386820507">
-      <screen x="0" y="0" width="3840" height="1040" />
-    </state>
-    <state x="2103" y="131" width="1283" height="917" key="dock-window-1/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593182992825" />
-    <state x="2014" y="0" width="1283" height="917" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@-1920.0.1920.1040" timestamp="1593020911132" />
-    <state x="-1581" y="87" width="1283" height="917" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593034303546" />
-    <state x="-1581" y="87" width="1283" height="917" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1593101310800" />
-    <state x="2102" y="0" width="1424" height="782" key="dock-window-1/0.0.3840.1040/1910.-1083.1920.1040/-10.-1080.1920.1040@0.0.3840.1040" timestamp="1598386820507" />
-    <state x="2123" y="95" width="1283" height="917" key="dock-window-2" timestamp="1593023343168">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2123" y="95" width="1283" height="917" key="dock-window-2/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@-1920.0.1920.1040" timestamp="1593023343168" />
-    <state x="1920" y="0" width="1283" height="917" key="dock-window-4" timestamp="1593700628807">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1920" y="0" width="1283" height="917" key="dock-window-4/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593700628807" />
-    <state x="2036" y="0" width="1283" height="645" key="dock-window-5" timestamp="1593702189908">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2036" y="0" width="1283" height="645" key="dock-window-5/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593702189908" />
-    <state x="385" y="160" key="git4idea.merge.GitPullDialog" timestamp="1593186149293">
-      <screen x="0" y="0" width="1280" height="728" />
-    </state>
-    <state x="385" y="160" key="git4idea.merge.GitPullDialog/0.0.1280.728/-1920.5.1920.1040@0.0.1280.728" timestamp="1593186149293" />
+    <MESSAGE value="added search for errors" />
+    <MESSAGE value="nornir" />
+    <option name="LAST_COMMIT_MESSAGE" value="nornir" />
   </component>
 </project>
