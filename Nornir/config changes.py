@@ -9,7 +9,7 @@ import getpass
 username = input("Enter your tacacs username: ")
 password = getpass.getpass(prompt="Enter your tacacs password: ")
 
-wb = openpyxl.load_workbook("all devices Spectrum.xlsx")
+wb = openpyxl.load_workbook("li devices Spectrum.xlsx")
 ws = wb.active
 hospitals = ["Forest Hills Hospital", "Glen Cove Hospital", "Huntington Hospital", "LHH", "LIJ", "Mather Hospital",
              "MEETH", "MIT", "NSUH", "NWH", "PBMC", "Phelps Hospital", "Plainview Hospital", "SIUH",
@@ -42,12 +42,13 @@ nr = InitNornir(core={"num_workers": 50},
                 inventory={
                     "plugin": "nornir.plugins.inventory.simple.SimpleInventory",
                     "options": {
-                        "host_file": "inventory/hosts.yaml",
+                        "host_file": "inventory/all-hosts2.yaml",
                         "group_file": "inventory/groups.yaml",
                         "default_file": "inventory/defaults.yaml"
                     }
                 }
                 )
+
 nr.inventory.defaults.username = username
 nr.inventory.defaults.password = password
 
@@ -89,16 +90,24 @@ while True:
         selection = input("Please choose which location to update from the list above by their number: ")
         selection = hospitals[int(selection) - 1]
         print('The following will be updated ' + selection)
-        location = nr.filter(F(site=selection))
-        break
+        yesno = input("Press enter if that is correct entry. (Y/N)")
+        if yesno.lower() == "n":
+            continue
+        else:
+            location = nr.filter(F(site=selection))
+            break
     elif count == 2:
         selection1 = input("Please choose the first location to update from the list above by their number: ")
         selection1 = hospitals[int(selection1) - 1]
         selection2 = input("Select the second hospital: ")
         selection2 = hospitals[int(selection2) - 1]
         print('The following will be updated ' + selection1 + ' and ' + selection2)
-        location = nr.filter(F(site=selection1) | F(site=selection2))
-        break
+        yesno = input("Press enter if that is correct entry. (Y/N)")
+        if yesno.lower() == "n":
+            continue
+        else:
+            location = nr.filter(F(site=selection1) | F(site=selection2))
+            break
     elif count == 3:
         selection1 = input("Please choose the first location to update from the list above by their number: ")
         selection1 = hospitals[int(selection1) - 1]
@@ -107,18 +116,29 @@ while True:
         selection3 = input("Select the third hospital: ")
         selection3 = hospitals[int(selection3) - 1]
         print('The following will be updated ' + selection1 + ', ' + selection2 + " and " + selection3)
-        location = nr.filter(F(site=selection1) | F(site=selection2) | F(site=selection3))
-        break
+        yesno = input("Press enter if that is correct entry. (Y/N)" )
+        if yesno.lower() == "n":
+            continue
+        else:
+            location = nr.filter(F(site=selection1) | F(site=selection2) | F(site=selection3))
+            break
     else:
         print("Invalid input")
         continue
 
-devices = location.filter(F(type="Cisco IOS - SSH Capable") | F(type="Cisco NX OS") | F(type="Telnet"))
+# location = nr.filter(~F(site="Valley Stream Hospital") & ~F(site="Syosset Hospital") & ~F(site="Southshore Hospital") &
+#                      ~F(site="Plainview Hospital") & ~F(site="PBMC") & ~F(site="NSUH") & ~F(site="MIT") & ~F(site="Huntington Hospital")
+#                      & ~F(site="Westbury"))
+
+devices = location.filter(F(type="Cisco IOS - SSH Capable") | F(type="Cisco NX OS") | F(type="Telnet") | F(type="DMVPN"))
+
 
 with tqdm(total=len(devices.inventory.hosts), desc="Updating  ") as progress_bar:
     complete = devices.run(task=updates, progress=progress_bar)
 
 print_result(complete)
 to_excel(complete)
-wb.save('all devices Spectrum.xlsx')
+wb.save('li devices Spectrum.xlsx')
 results_file(complete)
+
+input("Press Enter to exit")

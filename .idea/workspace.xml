@@ -26,10 +26,21 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7f2ec54-ea13-4332-993a-7c3e4c3da9fa" name="Default" comment="finally working well.">
+    <list default="true" id="f7f2ec54-ea13-4332-993a-7c3e4c3da9fa" name="Default" comment="finally got the results file working again">
+      <change afterPath="$PROJECT_DIR$/Nornir/change-username.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Nornir/edit host file.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Nornir/inventory/all-hosts2.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Nornir/inventory/all-hosts3.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Nornir/show-username.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ip to hostname.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/username.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mac Search.py" beforeDir="false" afterPath="$PROJECT_DIR$/Mac Search.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Nornir/config changes.py" beforeDir="false" afterPath="$PROJECT_DIR$/Nornir/config changes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nornir/csv to inventory.py" beforeDir="false" afterPath="$PROJECT_DIR$/Nornir/csv to inventory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nornir/inventory/groups.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Nornir/inventory/groups.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Nornir/snmp list.py" beforeDir="false" afterPath="$PROJECT_DIR$/Nornir/snmp list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hostname search.py" beforeDir="false" afterPath="$PROJECT_DIR$/hostname search.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,9 +56,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Nornir/inventory/hosts.yaml" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1d91hfXWXAWIG0hflXaLMcq5RY9" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -72,7 +80,28 @@
       </console-settings>
     </option>
   </component>
-  <component name="RunManager" selected="Python.config changes">
+  <component name="RunManager" selected="Python.Mac Search">
+    <configuration name="Mac Search" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="work" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Mac Search.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="config changes" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="work" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -94,7 +123,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="csv to inventory" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="edit host file" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="work" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -106,7 +135,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Nornir/csv to inventory.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Nornir/edit host file.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -115,28 +144,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ios versions" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="work" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Nornir" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Nornir/ios versions.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="printer-ping" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="hostname search" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="work" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -148,7 +156,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/printer-ping.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hostname search.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -157,7 +165,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="snmp list" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="show-username" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="work" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -169,7 +177,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Nornir/snmp list.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Nornir/show-username.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -180,18 +188,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.config changes" />
-      <item itemvalue="Python.csv to inventory" />
-      <item itemvalue="Python.ios versions" />
-      <item itemvalue="Python.printer-ping" />
-      <item itemvalue="Python.snmp list" />
+      <item itemvalue="Python.hostname search" />
+      <item itemvalue="Python.show-username" />
+      <item itemvalue="Python.edit host file" />
+      <item itemvalue="Python.Mac Search" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Mac Search" />
+        <item itemvalue="Python.hostname search" />
+        <item itemvalue="Python.edit host file" />
+        <item itemvalue="Python.show-username" />
         <item itemvalue="Python.config changes" />
-        <item itemvalue="Python.snmp list" />
-        <item itemvalue="Python.csv to inventory" />
-        <item itemvalue="Python.ios versions" />
-        <item itemvalue="Python.printer-ping" />
       </list>
     </recent_temporary>
   </component>
@@ -278,7 +286,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605131919492</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="finally got the results file working again">
+      <created>1605295199353</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1605295199354</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -312,65 +327,80 @@
     <MESSAGE value="printers" />
     <MESSAGE value="snmp changes" />
     <MESSAGE value="finally working well." />
-    <option name="LAST_COMMIT_MESSAGE" value="finally working well." />
+    <MESSAGE value="finally got the results file working again" />
+    <option name="LAST_COMMIT_MESSAGE" value="finally got the results file working again" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="614" y="284" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600972495209">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1579" height="391" key="GridCell.Tab.0.bottom" timestamp="1611862691703">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="614" y="284" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600972495209" />
-    <state width="1899" height="553" key="GridCell.Tab.0.bottom" timestamp="1605282629476">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="553" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605282629476" />
-    <state width="1579" height="273" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601654774800" />
+    <state width="1899" height="346" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1611600614158" />
+    <state width="1579" height="391" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1611862691703" />
     <state width="1899" height="288" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605031588626" />
-    <state width="1666" height="134" key="GridCell.Tab.0.bottom/0.0.3840.1040/1910.-1083.1920.1040/-10.-1080.1920.1040@0.0.3840.1040" timestamp="1598390590242" />
-    <state width="1899" height="553" key="GridCell.Tab.0.center" timestamp="1605282629476">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1579" height="391" key="GridCell.Tab.0.center" timestamp="1611862691702">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="553" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605282629476" />
-    <state width="1579" height="273" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601654774800" />
+    <state width="1899" height="346" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1611600614157" />
+    <state width="1579" height="391" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1611862691702" />
     <state width="1899" height="288" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605031588626" />
-    <state width="1666" height="134" key="GridCell.Tab.0.center/0.0.3840.1040/1910.-1083.1920.1040/-10.-1080.1920.1040@0.0.3840.1040" timestamp="1598390590242" />
-    <state width="1899" height="553" key="GridCell.Tab.0.left" timestamp="1605282629476">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1579" height="391" key="GridCell.Tab.0.left" timestamp="1611862691702">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="553" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605282629476" />
-    <state width="1579" height="273" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601654774800" />
+    <state width="1899" height="346" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1611600614157" />
+    <state width="1579" height="391" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1611862691702" />
     <state width="1899" height="288" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605031588625" />
-    <state width="1666" height="134" key="GridCell.Tab.0.left/0.0.3840.1040/1910.-1083.1920.1040/-10.-1080.1920.1040@0.0.3840.1040" timestamp="1598390590242" />
-    <state width="1899" height="553" key="GridCell.Tab.0.right" timestamp="1605282629476">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1579" height="391" key="GridCell.Tab.0.right" timestamp="1611862691703">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="553" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605282629476" />
-    <state width="1579" height="273" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601654774800" />
+    <state width="1899" height="346" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1611600614158" />
+    <state width="1579" height="391" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1611862691703" />
     <state width="1899" height="288" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605031588626" />
-    <state width="1666" height="134" key="GridCell.Tab.0.right/0.0.3840.1040/1910.-1083.1920.1040/-10.-1080.1920.1040@0.0.3840.1040" timestamp="1598390590242" />
-    <state x="32" y="67" key="MergeDialog" timestamp="1597936334035">
+    <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1611162269065">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="32" y="67" key="MergeDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597936334035" />
-    <state x="377" y="232" key="SettingsEditor" timestamp="1605202014008">
+    <state width="1899" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1611162269065" />
+    <state width="1899" height="348" key="GridCell.Tab.1.center" timestamp="1611162269065">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="377" y="232" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605202014008" />
+    <state width="1899" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1611162269065" />
+    <state width="1899" height="348" key="GridCell.Tab.1.left" timestamp="1611162269064">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1611162269064" />
+    <state width="1899" height="348" key="GridCell.Tab.1.right" timestamp="1611162269065">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1611162269065" />
+    <state x="377" y="232" key="SettingsEditor" timestamp="1611345427074">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="377" y="232" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1611345427074" />
     <state x="377" y="232" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604630206154" />
-    <state x="754" y="232" key="SettingsEditor/0.0.3840.1040/1910.-1083.1920.1040/-10.-1080.1920.1040@0.0.3840.1040" timestamp="1598389876016" />
-    <state x="730" y="450" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600709809716">
+    <state x="2227" y="0" width="1629" height="1027" key="dock-window-1" timestamp="1611173481790">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2227" y="0" width="1629" height="1027" key="dock-window-1/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1611173481790" />
+    <state x="1953" y="0" width="1629" height="681" key="dock-window-2" timestamp="1611346320465">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1953" y="0" width="1629" height="681" key="dock-window-2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1611346320465" />
+    <state x="1920" y="0" width="1629" height="653" key="dock-window-3" timestamp="1611555934420">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1920" y="0" width="1629" height="653" key="dock-window-3/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1611555934420" />
+    <state x="1920" y="0" width="1629" height="653" key="dock-window-4" timestamp="1611589215653">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1920" y="0" width="1629" height="653" key="dock-window-4/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1611589215653" />
+    <state x="1998" y="0" width="1629" height="1032" key="dock-window-5" timestamp="1611589215653">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1998" y="0" width="1629" height="1032" key="dock-window-5/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1611589215653" />
+    <state x="257" y="0" width="1629" height="1027" key="dock-window-6" timestamp="1611851607702">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="730" y="450" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600709809716" />
-    <state x="2061" y="0" width="1453" height="956" key="dock-window-1" timestamp="1601606462687">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2061" y="0" width="1453" height="956" key="dock-window-1/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601606462687" />
-    <state x="2102" y="0" width="1424" height="782" key="dock-window-1/0.0.3840.1040/1910.-1083.1920.1040/-10.-1080.1920.1040@0.0.3840.1040" timestamp="1598386820507" />
-    <state x="2046" y="62" width="1169" height="655" key="dock-window-2" timestamp="1601654772200">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2046" y="62" width="1169" height="655" key="dock-window-2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601648303986" />
-    <state x="2046" y="62" width="1169" height="655" key="dock-window-2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601654772200" />
+    <state x="257" y="0" width="1629" height="1027" key="dock-window-6/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1611851607702" />
+    <state x="257" y="0" width="1629" height="1027" key="dock-window-6/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1611768587135" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1605130259234">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

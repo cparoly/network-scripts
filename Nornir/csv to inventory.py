@@ -2,7 +2,7 @@ import openpyxl
 
 hosts = open(r'C:\Users\CParoly\PycharmProjects\work\Nornir\inventory\hosts.yaml', 'w')
 hosts.write('---')
-wb = openpyxl.load_workbook("all devices Spectrum.xlsx")
+wb = openpyxl.load_workbook("li devices Spectrum.xlsx")
 ws = wb.active
 count = 2
 for row in ws.rows:
