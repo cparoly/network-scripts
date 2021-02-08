@@ -42,9 +42,9 @@ nr = InitNornir(core={"num_workers": 50},
                 inventory={
                     "plugin": "nornir.plugins.inventory.simple.SimpleInventory",
                     "options": {
-                        "host_file": "inventory/all-hosts2.yaml",
+                        "host_file": "inventory/all-hosts3.yaml",
                         "group_file": "inventory/groups.yaml",
-                        "default_file": "inventory/defaults.yaml"
+                        "defaults_file": "inventory/defaults.yaml"
                     }
                 }
                 )
@@ -126,12 +126,12 @@ while True:
         print("Invalid input")
         continue
 
-# location = nr.filter(~F(site="Valley Stream Hospital") & ~F(site="Syosset Hospital") & ~F(site="Southshore Hospital") &
-#                      ~F(site="Plainview Hospital") & ~F(site="PBMC") & ~F(site="NSUH") & ~F(site="MIT") & ~F(site="Huntington Hospital")
-#                      & ~F(site="Westbury"))
+location = nr.filter(~F(site="Valley Stream Hospital") & ~F(site="Syosset Hospital") & ~F(site="Southshore Hospital") &
+                     ~F(site="Plainview Hospital") & ~F(site="PBMC") & ~F(site="NSUH") & ~F(site="MIT") & ~F(site="Huntington Hospital")
+                     & ~F(site="Westbury"))
 
 devices = location.filter(F(type="Cisco IOS - SSH Capable") | F(type="Cisco NX OS") | F(type="Telnet") | F(type="DMVPN"))
-
+# devices = nr.filter(F(name='nw-s-1300Union-S301-mdf-a.net.northwell.edu') | F(name="nw-s-1dakota-mdf-a.net.northwell.edu"))
 
 with tqdm(total=len(devices.inventory.hosts), desc="Updating  ") as progress_bar:
     complete = devices.run(task=updates, progress=progress_bar)
