@@ -13,8 +13,8 @@ int_regexes = [int_regex, int_po_regex]
 description_regex = re.compile(r'nw-s\S*|ns-s\S*')
 access_vlan_regex = re.compile(r'switchport access vlan (\d*)', re.MULTILINE)
 
-user = input("Tacacs username: ")
-pwd = getpass.getpass("Tacacs password")
+# user = input("Tacacs username: ")
+# pwd = getpass.getpass("Tacacs password")
 
 try:
     distribution = input("What is the distribution switch that will have the ARP table for these? ")
@@ -37,8 +37,8 @@ while True:
 cisco = {
     'device_type': 'cisco_ios',
     'host': distribution,
-    'username': user,
-    'password': pwd
+    'username': 'cparoly',
+    'password': 'blackbird.1'
 }
 
 try:
@@ -52,8 +52,8 @@ def ConnectToDevice(host):
     switch = {
         'device_type': 'cisco_ios',
         'host': host,
-        'username': user,
-        'password': pwd
+        'username': 'cparoly',
+        'password': 'blackbird.1'
     }
     try:
         net_connect = ConnectHandler(**switch)

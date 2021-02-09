@@ -72,7 +72,7 @@ hosts = iter(hosts)
 next(hosts)
 
 count = 2
-
+filter(None, hosts)
 
 def ConnectToDevice(host):
 	print("Connecting to " + host)
@@ -186,6 +186,7 @@ def FindAttachedInterface(switch, mac):
 print("Connecting to " + distribution)
 
 for ip in hosts:
+	print(ip)
 	ws.cell(row=count, column=1, value=ip)
 	try:
 		ip = socket.gethostbyname(ip)
@@ -230,6 +231,7 @@ for ip in hosts:
 
 	print(interface, duplex, speed)
 	print('CRC = ' + CRC, '\nInput Errors = ' + input_error)
+input("Press enter to exit")
 wb.save(filename='host-interfaces.xlsx')
 dist_connect.disconnect()
 book.close()

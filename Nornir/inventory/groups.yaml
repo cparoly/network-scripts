@@ -1,5 +1,45 @@
 ---
-cisco:
-    platform: ios
-    username: test
-    password: test
+Firewall:
+    platform: cisco_asa_ssh
+
+Switch:
+    platform: cisco_ios
+    data:
+        img: ios.txt
+
+DMVPN:
+    platform: cisco_ios
+    data:
+        img: ios.txt
+
+Router:
+    platform: cisco_ios
+    data:
+        img: ios.txt
+
+internetwork:
+    platform: cisco_ios
+    data:
+        img: internetwork.txt
+
+Palo Alto:
+    platform: paloalto_panos
+
+
+Wireless LAN Controller:
+    platform: cisco_wlc
+
+
+Test:
+    platform: cisco_ios
+
+
+Load Balancer:
+    platform: netscaler
+
+
+Nexus:
+    platform: cisco_ios
+    data:
+        img: nexus.txt
+
