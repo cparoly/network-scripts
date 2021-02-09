@@ -1,0 +1,12 @@
+{% for user in host.users %}
+no {{ user }}
+y
+{% endfor %}
+username hsnwcm priv 15 secret NWd@7a#cce$$
+line vty 0 15
+no password
+exec-timeout 30 0
+line con 0
+no password
+end
+wr
