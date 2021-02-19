@@ -39,7 +39,7 @@ Load Balancer:
 
 
 Nexus:
-    platform: cisco_ios
+    platform: cisco_nxos
     data:
         img: nexus.txt
 

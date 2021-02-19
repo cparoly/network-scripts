@@ -6867,15 +6867,15 @@ nw-s-3HQuad-east-idf-d.net.northwell.edu:
   groups:
     - Switch
   data:
-    site: 3 Huntington Quad, Melville NY
+    site: 3hq
     type: Cisco IOS - SSH Capable
     building: Remote
-ns-s-3HQuad-east-idf-c.net.northwell.edu:
+nw-s-3HQuad-east-idf-c.net.northwell.edu:
   hostname: 10.121.64.239
   groups:
     - Switch
   data:
-    site: 3 Huntington Quad, Melville, NY 11747 2nd floor East IDF
+    site: 3hq
     type: Cisco IOS - SSH Capable
     building: Remote
 nw-s-3hquad-west-idf-test-a.net.northwell.edu:
@@ -6883,7 +6883,7 @@ nw-s-3hquad-west-idf-test-a.net.northwell.edu:
   groups:
     - Switch
   data:
-    site: 3 Huntington Quad, West IDF
+    site: 3hq
     type: Cisco IOS - SSH Capable
     building: Remote
 nw-s-3HQuad-4thFL-idf-a.net.northwell.edu:
@@ -6891,7 +6891,7 @@ nw-s-3HQuad-4thFL-idf-a.net.northwell.edu:
   groups:
     - Switch
   data:
-    site: 3 Huntington Quadrangle
+    site: 3hq
     type: Cisco IOS - SSH Capable
     building: Remote
 ns-s-3HQuad-3rdFL-idf-a.nshs.edu:
@@ -6899,7 +6899,7 @@ ns-s-3HQuad-3rdFL-idf-a.nshs.edu:
   groups:
     - Switch
   data:
-    site: 3 Huntington Quadrangle
+    site: 3hq
     type: Cisco IOS - SSH Capable
     building: Remote
 ns-s-3HQuad-3rdFL-idf-b.nshs.edu:
@@ -6907,7 +6907,7 @@ ns-s-3HQuad-3rdFL-idf-b.nshs.edu:
   groups:
     - Switch
   data:
-    site: 3 Huntington Quadrangle
+    site: 3hq
     type: Cisco IOS - SSH Capable
     building: Remote
 ns-s-3HQuad-TSERack.nshs.edu:
@@ -6915,7 +6915,7 @@ ns-s-3HQuad-TSERack.nshs.edu:
   groups:
     - Switch
   data:
-    site: 3 Huntington Quadrangle
+    site: 3hq
     type: Cisco IOS - SSH Capable
     building: Remote
 nw-s-3HQuad-VSS-Dist.net.northwell.edu:
@@ -6923,7 +6923,7 @@ nw-s-3HQuad-VSS-Dist.net.northwell.edu:
   groups:
     - Router
   data:
-    site: 3 Huntington Quadrangle Melville New York 11747
+    site: 3hq
     type: Cisco IOS - SSH Capable
     building: Remote
 nw-s-3hquad-bsmt-rm6-idf-a.nshs.edu:
@@ -6931,7 +6931,7 @@ nw-s-3hquad-bsmt-rm6-idf-a.nshs.edu:
   groups:
     - Switch
   data:
-    site: 3 Huntington Quadrangle Melville NY
+    site: 3hq
     type: Cisco IOS - SSH Capable
     building: Remote
 ns-s-3hquad-bsmt-rm5-idf-a.nshs.edu:
@@ -6939,7 +6939,7 @@ ns-s-3hquad-bsmt-rm5-idf-a.nshs.edu:
   groups:
     - Switch
   data:
-    site: 3 Huntington Quadrangle Melville NY
+    site: 3hq
     type: Cisco IOS - SSH Capable
     building: Remote
 ns-s-3HQuad-1stFL-idf-b.nshs.edu:
@@ -6947,7 +6947,7 @@ ns-s-3HQuad-1stFL-idf-b.nshs.edu:
   groups:
     - Switch
   data:
-    site: 3 Huntington Quadrangle Melville NY 1St Floor IDF a Closet
+    site: 3hq
     type: Cisco IOS - SSH Capable
     building: Remote
 nw-s-3HQuad-west-idf-e.net.northwell.edu:
@@ -6955,7 +6955,7 @@ nw-s-3HQuad-west-idf-e.net.northwell.edu:
   groups:
     - Switch
   data:
-    site: 3 Huntington Quadrangle Melville NY East IDF Closet
+    site: 3hq
     type: Cisco IOS - SSH Capable
     building: Remote
 nw-s-3HQuad-east-idf-e.net.northwell.edu:
@@ -6963,7 +6963,7 @@ nw-s-3HQuad-east-idf-e.net.northwell.edu:
   groups:
     - Switch
   data:
-    site: 3 Huntington Quadrangle Melville NY East IDF Closet
+    site: 3hq
     type: Cisco IOS - SSH Capable
     building: Remote
 ns-s-3HQuad-GRV3-B.nshs.edu:
@@ -6971,23 +6971,23 @@ ns-s-3HQuad-GRV3-B.nshs.edu:
   groups:
     - Switch
   data:
-    site: 3 Huntington Quadrangle Melville NY East IDF Closet
+    site: 3hq
     type: Cisco IOS - SSH Capable
     building: Remote
-ns-s-3HQuad-east-idf-b.nshs.edu:
+nw-s-3HQuad-east-idf-b.nshs.edu:
   hostname: 10.121.64.253
   groups:
     - Switch
   data:
-    site: 3 Huntington Quadrangle Melville NY East IDF Closet
+    site: 3hq
     type: Cisco IOS - SSH Capable
     building: Remote
-ns-s-3HQuad-east-idf-a.nshs.edu:
+nw-s-3HQuad-east-idf-a.nshs.edu:
   hostname: 10.121.64.254
   groups:
     - Switch
   data:
-    site: 3 Huntington Quadrangle Melville NY East IDF Closet
+    site: 3hq
     type: Cisco IOS - SSH Capable
     building: Remote
 ns-s-3HQuad-3rd-FL-lab-a.net.northwell.edu:
@@ -6995,7 +6995,7 @@ ns-s-3HQuad-3rd-FL-lab-a.net.northwell.edu:
   groups:
     - Switch
   data:
-    site: 3 Huntington Quadrangle Melville NY MDF Closet
+    site: 3hq
     type: Cisco IOS - SSH Capable
     building: Remote
 ns-s-3HQuad-3rdFL-mdf-a.nshs.edu:
@@ -7003,7 +7003,7 @@ ns-s-3HQuad-3rdFL-mdf-a.nshs.edu:
   groups:
     - Switch
   data:
-    site: 3 Huntington Quadrangle Melville NY MDF Closet
+    site: 3hq
     type: Cisco IOS - SSH Capable
     building: Remote
 ns-s-3HQuad-west-idf-a.nshs.edu:
@@ -7011,7 +7011,7 @@ ns-s-3HQuad-west-idf-a.nshs.edu:
   groups:
     - Switch
   data:
-    site: 3 Huntington Quadrangle Melville NY West IDF Closet
+    site: 3hq
     type: Cisco IOS - SSH Capable
     building: Remote
 ns-s-3HQuad-west-idf-b.nshs.edu:
@@ -7019,7 +7019,7 @@ ns-s-3HQuad-west-idf-b.nshs.edu:
   groups:
     - Switch
   data:
-    site: 3 Huntington Quadrangle Melville NY West IDF Closet
+    site: 3hq
     type: Cisco IOS - SSH Capable
     building: Remote
 nw-r-3HQuad-WAN-A.net.northwell.edu:
@@ -7027,7 +7027,7 @@ nw-r-3HQuad-WAN-A.net.northwell.edu:
   groups:
     - Router
   data:
-    site: 3 Huntington Quadrangle Meville NY 3rd Floor MDF
+    site: 3hq
     type: Cisco IOS - SSH Capable
     building: Remote
 nw-r-3HQuad-WAN-B.net.northwell.edu:
@@ -7035,7 +7035,7 @@ nw-r-3HQuad-WAN-B.net.northwell.edu:
   groups:
     - Router
   data:
-    site: 3 Huntington Quadrangle Meville NY 3rd Floor MDF
+    site: 3hq
     type: Cisco IOS - SSH Capable
     building: Remote
 nw-wlc-3hq-melville-a:
@@ -7043,7 +7043,7 @@ nw-wlc-3hq-melville-a:
   groups:
     - Wireless LAN Controller
   data:
-    site: 3 Huntington Quadrangle, Melville
+    site: 3hq
     type: 0_Wireless Controllers - Not Active
     building: Remote
 ns-s-3HQuad-1stFL-idf-a.nshs.edu:
@@ -7051,7 +7051,7 @@ ns-s-3HQuad-1stFL-idf-a.nshs.edu:
   groups:
     - Switch
   data:
-    site: 3 Huntington Quadrangle, Melville, NY 11747
+    site: 3hq
     type: Cisco IOS - SSH Capable
     building: Remote
 ns-v-Maternal-300-Center-a.net.northwell.edu:
@@ -9279,7 +9279,7 @@ nw-r-415crossways-mdf-a.net.northwell.edu:
     site: 415 Crossways Park Dr, Woodbury, NY 11797 Router
     type: Cisco IOS - SSH Capable
     building: Remote
-ns-s-420nhp-CL1-b.nshs.edu:
+nw-s-nhp-420lake-cl65-b:
   hostname: 10.169.1.237
   groups:
     - Switch
@@ -9287,7 +9287,7 @@ ns-s-420nhp-CL1-b.nshs.edu:
     site: 420 Lakeville Rd New Hyde Park New York
     type: Cisco IOS - SSH Capable
     building: Remote
-ns-s-420nhp-CL1-a.net.northwell.edu:
+nw-s-nhp-420lake-cl65-a:
   hostname: 10.169.1.235
   groups:
     - Switch
@@ -9295,7 +9295,7 @@ ns-s-420nhp-CL1-a.net.northwell.edu:
     site: 420 Lakeville Rd. New Hyde Park, NY 2nd Fl. Closet 1 in Hallway
     type: Cisco IOS - SSH Capable
     building: Remote
-ns-s-420nhp-cl2-a.net.northwell.edu:
+nw-s-nhp-420lake-cl32-a:
   hostname: 10.169.1.236
   groups:
     - Switch
@@ -16469,8 +16469,24 @@ ns-s-nhp-DB10-a.nshs.edu:
     site: LIJ
     type: Cisco IOS - SSH Capable
     building: Hospital
-ns-s-nhp-HEARING.nshs.edu:
+nw-s-nhp-430lake-cl33-a:
   hostname: 10.169.1.231
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-420nhp-237b:
+  hostname: 10.169.1.45
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-420nhp-temp-2:
+  hostname: 10.169.1.46
   groups:
     - Switch
   data:
@@ -20143,30 +20159,6 @@ IDF-MD.net.northwell.edu:
     netmiko:
       extras:
         device_type: cisco_ios_telnet
-Router_Core_1.net.northwell.edu:
-  hostname: 10.55.200.251
-  groups:
-    - Router
-  data:
-    site: PBMC
-    type: Telnet
-    building: Hospital
-  connection_options:
-    netmiko:
-      extras:
-        device_type: cisco_ios_telnet
-Router_Core_2.net.northwell.edu:
-  hostname: 10.55.200.252
-  groups:
-    - Router
-  data:
-    site: PBMC
-    type: Telnet
-    building: Hospital
-  connection_options:
-    netmiko:
-      extras:
-        device_type: cisco_ios_telnet
 ns-fw-1300RoanokeAve-mdf-a.nshs.edu_Primary:
   hostname: 10.55.100.225
   groups:
@@ -22941,6 +22933,22 @@ nw-s-301emain-CV19-Tent-a.net.northwell.edu:
     site: Southshore Hospital
     type: Cisco IOS - SSH Capable
     building: Hospital
+nw-s-301emain-cl13-a:
+  hostname: 10.156.1.119
+  groups:
+    - Switch
+  data:
+    site: Southshore Hospital
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-301emain-cl13-b:
+  hostname: 10.156.1.140
+  groups:
+    - Switch
+  data:
+    site: Southshore Hospital
+    type: Cisco IOS - SSH Capable
+    building: Hospital
 nw-s-301emain-cl3-d.net.northwell.edu:
   hostname: 10.156.1.136
   groups:
@@ -23634,7 +23642,7 @@ nw-v-3HQ-Storage-mdf-a.nshs.edu:
   groups:
     - Router
   data:
-    site: Storage Bldg Buildout @ 3 Huntington Quad, Melville, NY 11747
+    site: 3hq
     type: Cisco IOS - SSH Capable
     building: Remote
 ns-s-nhp400-1WEST-a.nshs.edu:
