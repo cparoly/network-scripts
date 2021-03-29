@@ -7,7 +7,6 @@ from netmiko import NetMikoAuthenticationException
 import re
 import ipaddress
 import getpass
-from subprocess import Popen, PIPE
 mac_regex = re.compile(r'[0-9a-f]{4}\.[0-9a-f]{4}\.[0-9a-f]{4}')
 int_regex = re.compile(r'Fa{1}\S*\d/\S*\d{1,2}|Gi{1}\S*\d/\S*\d|Eth{1}\d/\S*\d{1,2}|Te{1}\S*\d/\S*\d')
 int_po_regex = re.compile(r'Po{1}\d*')
@@ -26,7 +25,7 @@ ws['E1'] = 'Speed'
 ws['F1'] = 'Switch'
 ws['G1'] = 'CRC'
 ws['H1'] = 'Input Errors'
-ws['I1'] = 'Output Drops'
+ws['I1'] = 'Output Errors'
 
 user = input("Tacacs username: ")
 pwd = getpass.getpass("Tacacs password" )
@@ -42,7 +41,7 @@ while True:
 		print("Wrong file path")
 		continue
 
-col = input("What column number are the hostnames? ")
+col = input("What column number are the IPs? ")
 try:
 	distribution = input("What is the distribution switch that will have the ARP table for these? ")
 	distribution = ipaddress.ip_address(distribution)
@@ -66,14 +65,7 @@ hosts = []
 ips = []
 count = 2
 for column in sheet["A"]:
-	hosts.append(column.value)
-	count += 1
-
-hosts = iter(hosts)
-next(hosts)
-
-count = 2
-filter(None, hosts)
+	ips.append(column.value)
 
 def ConnectToDevice(host):
 	print("Connecting to " + host)
@@ -96,17 +88,19 @@ def ConnectToDevice(host):
 def GetMac(ip):
 	print('*' * 50)
 	print ('Getting the MAC ADDRESS')
-	arp = dist_connect.send_command("show ip arp " + ip, delay_factor=.2)
-	print(arp)
-	mac = re.search(mac_regex, arp)
-	if mac is None:
-		print('No arp entry found')
-		ws.cell(row=count, column=3, value='NONE')
-		return None
-	else:
-		mac = mac.group()
-		return mac
-
+	try:
+		arp = dist_connect.send_command("show ip arp " + ip, delay_factor=.2)
+		print(arp)
+		mac = re.search(mac_regex, arp)
+		if mac is None:
+			print('No arp entry found')
+			ws.cell(row=count, column=3, value='NONE')
+			return None
+		else:
+			mac = mac.group()
+			return mac
+	except:
+		pass
 def GetNextSwitch(mac):
 	print('*' * 50)
 	print ('Getting next switch')
@@ -181,30 +175,19 @@ def FindAttachedInterface(switch, mac):
 			CRC = CRC[0]
 			input_error = input_error.strip()
 			input_error = input_error[0]
-			if 'drops' in errors:
-				error = errors.splitlines(';')
-				output_drops = error[2]
+		if 'drops' in errors:
+			error = errors.splitlines(';')
+			output_drops = error[2]
+
 	net_connect.disconnect()
 	return int, duplex, speed, CRC, input_error, output_drops
 
 
 print("Connecting to " + distribution)
 
-for ip in hosts:
+for ip in ips:
 	print(ip)
-	ws.cell(row=count, column=1, value=ip)
-	try:
-		ip = socket.gethostbyname(ip)
-	except socket.gaierror:
-		print("No Hostname Found")
-		continue
-	print('*' * 50)
-	print(ip)
-	print(count)
-
-	ws.cell(row=count, column=2, value=ip)
 	count += 1
-
 	mac = GetMac(ip)
 	print(mac)
 	if mac is None:
@@ -226,14 +209,15 @@ for ip in hosts:
 		print('No Interface found----FindAttachedInterface')
 		ws.cell(row=count, column=3, value='NONE')
 		continue
-
+	ws.cell(row=count, column=1, value=ip)
 	ws.cell(row=count, column=3, value=interface)
 	ws.cell(row=count, column=4, value=duplex)
 	ws.cell(row=count, column=5, value=speed)
-	ws.cell(row=count, column=6, value=switch)
-	ws.cell(row=count, column=7, value=CRC)
-	ws.cell(row=count, column=8, value=input_error)
-	ws.cell(row=count, column=9, value=output_drops)
+	ws.cell(row=count, column=2, value=switch)
+	ws.cell(row=count, column=6, value=CRC)
+	ws.cell(row=count, column=7, value=input_error)
+	ws.cell(row=count, column=8, value=output_drops)
+
 	print(interface, duplex, speed)
 	print('CRC = ' + CRC, '\nInput Errors = ' + input_error)
 input("Press enter to exit")

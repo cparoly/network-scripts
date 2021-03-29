@@ -88,9 +88,8 @@ def replace_users(task):
 
 
 def run_template(task, progress):
-    #config = replace_users(task)
-    #result = task.run(task=netmiko_send_config, config_commands=config, delay_factor=2, max_loops=400, cmd_verify=False)
-    result = task.run(task=netmiko_send_command, command_string='copy running-config startup-config')
+    config = replace_users(task)
+    result = task.run(task=netmiko_send_config, config_commands=config, delay_factor=2, max_loops=400, cmd_verify=False)
     progress.update()
     return result
 
@@ -143,12 +142,11 @@ while True:
         print("Invalid input")
         continue
 
-# test = nr.filter(F(site='3hq'))
-#devices = location.filter(F(type="Cisco IOS - SSH Capable") | F(type="Cisco NX OS") | F(type="Telnet") | F(type="DMVPN"))
-devices = location.filter(type='Cisco NX OS')
+
+devices = location.filter(F(type="Cisco IOS - SSH Capable") | F(type="Cisco NX OS") | F(type="Telnet") | F(type="DMVPN"))
 with tqdm(total=len(devices.inventory.hosts), desc="Updating ") as progress_bar:
     complete = devices.run(task=run_template, progress=progress_bar)
 print_result(complete)
-# to_excel(complete)
-# wb.save('all network devices in Spectrum.xlsx')
-# results_file(complete)
+to_excel(complete)
+wb.save('all network devices in Spectrum.xlsx')
+results_file(complete)

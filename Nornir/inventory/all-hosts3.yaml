@@ -6165,14 +6165,6 @@ ns-s-270Pulaski-IDF-a.nshs.edu:
     site: 270 Pulaski Rd, Suite D, Greenlawn, NY 11740
     type: Cisco IOS - SSH Capable
     building: Remote
-ns-s-hil-adolpav-b.nshs.edu:
-  hostname: 10.169.1.57
-  groups:
-    - Switch
-  data:
-    site: 270-05 75th Ave, Adolescent Pavillion, New Hyde Park,NY
-    type: Cisco IOS - SSH Capable
-    building: Remote
 ns-s-hil-Eslow-b.nshs.edu:
   hostname: 10.169.1.61
   groups:
@@ -6180,7 +6172,7 @@ ns-s-hil-Eslow-b.nshs.edu:
   data:
     site: 270-05 75th Ave, Eslow, New Hyde Park, NY
     type: Cisco IOS - SSH Capable
-    building: Remote
+    building: Hospital
 ns-s-hil-MLOW-b.nshs.edu:
   hostname: 10.169.1.53
   groups:
@@ -6188,7 +6180,7 @@ ns-s-hil-MLOW-b.nshs.edu:
   data:
     site: 270-05 75th Ave, MLOW, New Hyde Park, NY
     type: Cisco IOS - SSH Capable
-    building: Remote
+    building: Hospital
 ns-s-nhpacp-clbaseW-c.nshs.edu:
   hostname: 10.169.1.246
   groups:
@@ -6196,7 +6188,7 @@ ns-s-nhpacp-clbaseW-c.nshs.edu:
   data:
     site: 270-05 75th Ave, New Hyde Park
     type: Cisco IOS - SSH Capable
-    building: Remote
+    building: Hospital
 ns-s-nhpAT-CL1E-b.nshs.edu:
   hostname: 10.169.1.238
   groups:
@@ -6204,31 +6196,39 @@ ns-s-nhpAT-CL1E-b.nshs.edu:
   data:
     site: 270-05 75th Ave, New Hyde Park ACP Building
     type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-3157-31st-mdf-a:
+  hostname: 10.136.254.128
+  groups:
+    - Switch
+  data:
+    site: 31-57 31st Street, 1st Floor, Astoria, NY 11106
+    type: Cisco IOS - SSH Capable
     building: Remote
-nw-s-CCMC-idf3-d.net.northwell.edu:
+nw-s-nhp-CCMC-cl15-d.net.northwell.edu:
   hostname: 10.169.1.136
   groups:
     - Switch
   data:
     site: 270-05 75th Ave, New Hyde Park New York LIJ
     type: Cisco IOS - SSH Capable
-    building: Remote
-nw-s-CCMC-idf3-c.net.northwell.edu:
+    building: Hospital
+nw-s-nhp-CCMC-cl15-c.net.northwell.edu:
   hostname: 10.169.1.137
   groups:
     - Switch
   data:
     site: 270-05 75th Ave, New Hyde Park New York LIJ
     type: Cisco IOS - SSH Capable
-    building: Remote
-ns-s-hil-KAUFM-a.nshs.edu:
+    building: Hospital
+nw-s-nhp-kaufm-cl38-a:
   hostname: 10.169.1.198
   groups:
     - Switch
   data:
     site: 270-05 75th Ave, New Hyde Park, NY,
     type: Cisco IOS - SSH Capable
-    building: Remote
+    building: Hospital
 ns-s-nhpAT-CL1E-a.nshs.edu:
   hostname: 10.169.1.243
   groups:
@@ -6236,7 +6236,7 @@ ns-s-nhpAT-CL1E-a.nshs.edu:
   data:
     site: 270-05 75th Ave, New Hyde Park, NY, Activties Bldg Closet CL1 East
     type: Cisco IOS - SSH Capable
-    building: Remote
+    building: Hospital
 ns-s-nhpAT-CL2E-a.nshs.edu:
   hostname: 10.169.1.241
   groups:
@@ -6244,7 +6244,7 @@ ns-s-nhpAT-CL2E-a.nshs.edu:
   data:
     site: 270-05 75th Ave, New Hyde Park, NY, Activties Bldg Closet CL2 East 2nd floor
     type: Cisco IOS - SSH Capable
-    building: Remote
+    building: Hospital
 ns-s-nhpAT-CL2W-a.nshs.edu:
   hostname: 10.169.1.240
   groups:
@@ -6252,7 +6252,7 @@ ns-s-nhpAT-CL2W-a.nshs.edu:
   data:
     site: 270-05 75th Ave, New Hyde Park, NY, Activties Bldg Closet CL2 West 2nd floor
     type: Cisco IOS - SSH Capable
-    building: Remote
+    building: Hospital
 ns-s-hil-MLOW-a.nshs.edu:
   hostname: 10.169.1.200
   groups:
@@ -6260,15 +6260,22 @@ ns-s-hil-MLOW-a.nshs.edu:
   data:
     site: 270-05 75th Ave, New Hyde Park, NY, Cellar FL (Oncology), C
     type: Cisco IOS - SSH Capable
-    building: Remote
-ns-s-hil-RST-a.net.northwell.edu:
+    building: Hospital
+nw-s-nhp-rst-cl43-a:
   hostname: 10.169.1.195
   groups:
     - Switch
   data:
     site: 270-05 75th Ave, New Hyde Park, NY, Closet ESLOW
     type: Cisco IOS - SSH Capable
-    building: Remote
+    building: Hospital
+nw-s-nhp-bovistrl-a:
+  hostname: 10.169.1.114
+  groups:
+    - Switch
+  data:
+    type: Cisco IOS - SSH Capable
+    building: Hospital
 ns-s-hil-ESLOW-a.nshs.edu:
   hostname: 10.169.1.196
   groups:
@@ -6276,7 +6283,7 @@ ns-s-hil-ESLOW-a.nshs.edu:
   data:
     site: 270-05 75th Ave, New Hyde Park, NY, Closet ESLOW
     type: Cisco IOS - SSH Capable
-    building: Remote
+    building: Hospital
 ns-s-hil-LITT-a.nshs.edu:
   hostname: 10.169.1.199
   groups:
@@ -6293,7 +6300,7 @@ ns-s-hil-LLOW-a.nshs.edu:
     site: 270-05 75th Ave, New Hyde Park, NY, Hillside Closet LLOW
     type: Cisco IOS - SSH Capable
     building: Remote
-ns-s-hil-KAUFM-b.nshs.edu:
+nw-s-nhp-kaufm-cl38-b:
   hostname: 10.169.1.59
   groups:
     - Switch
@@ -8326,6 +8333,30 @@ nw-v-372post-ave-mdf-a.net.northwell.edu:
     site: 372 Post Ave Westbury, NY 11590
     type: Cisco IOS - SSH Capable
     building: Remote
+nw-s-9920-4th-ave-mdf-a:
+  hostname: 10.136.254.192
+  groups:
+    - Switch
+  data:
+    site: 9920 4th Ave, Brooklyn NY 11209
+    type: Cisco IOS - SSH Capable
+    building: Remote
+nw-v-60N-country-mdf-a:
+  hostname: 100.92.251.41
+  groups:
+    - Router
+  data:
+    site: 60 North Country rd Suite 203, Port Jefferson NY 11777
+    type: Cisco IOS - SSH Capable
+    building: Remote
+nw-s-60N-country-mdf-a:
+  hostname: 100.92.242.4
+  groups:
+    - Switch
+  data:
+    site: 60 North Country rd Suite 203, Port Jefferson NY 11777
+    type: Cisco IOS - SSH Capable
+    building: Remote
 ns-v-TeleS-Patil-off-a.nshs.edu:
   hostname: 100.92.250.11
   groups:
@@ -8717,7 +8748,7 @@ HH-3560-39ViewAcre.nshs.edu:
   data:
     site: 39 View Acre Dr, Huntington, NY 11743 Access Switch
     type: Cisco IOS - SSH Capable
-    building: Remote
+    building: Hospital
 ns-s-39ViewAcre-mdf-a.nshs.edu:
   hostname: 172.31.9.4
   groups:
@@ -8725,7 +8756,7 @@ ns-s-39ViewAcre-mdf-a.nshs.edu:
   data:
     site: 39 View Acre Drive Huntington New york
     type: Cisco IOS - SSH Capable
-    building: Remote
+    building: Hospital
 ns-v-39ViewAcre-mdf-a.nshs.edu:
   hostname: 100.92.250.88
   groups:
@@ -8733,7 +8764,7 @@ ns-v-39ViewAcre-mdf-a.nshs.edu:
   data:
     site: 39 View Acre Drive, Huntington New York
     type: Cisco IOS - SSH Capable
-    building: Remote
+    building: Hospital
 ns-s-4E88thSt-mdf-a.nshs.edu:
   hostname: 172.31.12.133
   groups:
@@ -8852,6 +8883,14 @@ nw-s-nhp400-1west-c.net.northwell.edu:
     - Switch
   data:
     site: 400 Lakeville Rd Lake Success, NY Closet 1 West
+    type: Cisco IOS - SSH Capable
+    building: Remote
+nw-s-232e-30th-mdf-a:
+  hostname: 10.136.254.96
+  groups:
+    - Switch
+  data:
+    site: 232 E 30th st, New York, NY
     type: Cisco IOS - SSH Capable
     building: Remote
 nw-s-nhp-400lake-cl31-c.net.northwell.edu:
@@ -12945,22 +12984,6 @@ ns-s-971MontaukHwy-mdf-a.nshs.edu:
     site: 971 Montauk Hwy Oakdale New York
     type: Cisco IOS - SSH Capable
     building: Remote
-IBM-BladeCenter2:
-  hostname: 10.170.1.146
-  groups:
-    - Switch
-  data:
-    site: 972 Brush Hollow Rd.  Data Center (IBM BladeCenter Server     #4)
-    type: Cisco IOS - SSH Capable
-    building: Remote
-IBM-BladeCenter1:
-  hostname: 10.170.1.145
-  groups:
-    - Switch
-  data:
-    site: 972 Brush Hollow Rd.  Data Center (IBM BladeCenter)
-    type: Cisco IOS - SSH Capable
-    building: Remote
 ns-r-wb-DCJS-ext.nshs.edu:
   hostname: 10.18.25.62
   groups:
@@ -12982,89 +13005,89 @@ nw-s-wb-dist-f.nshs.edu:
   groups:
     - Router
   data:
-    site: 972 Brush Hollow Road, (2nd Fl, Data Center) Westbury, NY
+    site: Westbury
     type: Cisco IOS - SSH Capable
-    building: Remote
+    building: Datacenter
 nw-s-wb-cl3-d.net.northwell.edu:
   hostname: 10.170.0.218
   groups:
     - Switch
   data:
-    site: 972 Brush Hollow Road, Westbury, N.Y., 3rd FL, Closet 3
+    site: Westbury
     type: Cisco IOS - SSH Capable
-    building: Remote
+    building: Datacenter
 ns-s-wb-cl3-4507a.nshs.edu:
   hostname: 10.170.0.238
   groups:
     - Switch
   data:
-    site: 972 Brush Hollow Road, Westbury, N.Y., 3rd FL, Closet 3
+    site: Westbury
     type: Cisco IOS - SSH Capable
-    building: Remote
+    building: Datacenter
 ns-s-wb-cl3-4507b.nshs.edu:
   hostname: 10.170.0.239
   groups:
     - Switch
   data:
-    site: 972 Brush Hollow Road, Westbury, N.Y., 3rd FL, Closet 3
+    site: Westbury
     type: Cisco IOS - SSH Capable
-    building: Remote
+    building: Datacenter
 ns-s-wb-cl3-4507c.nshs.edu:
   hostname: 10.170.0.240
   groups:
     - Switch
   data:
-    site: 972 Brush Hollow Road, Westbury, N.Y., 3rd FL, Closet 3
+    site: Westbury
     type: Cisco IOS - SSH Capable
-    building: Remote
+    building: Datacenter
 ns-s-wb-cl4-4507a.nshs.edu:
   hostname: 10.170.0.241
   groups:
     - Switch
   data:
-    site: 972 Brush Hollow Road, Westbury, N.Y., 3rd FL, Closet 4
+    site: Westbury
     type: Cisco IOS - SSH Capable
-    building: Remote
+    building: Datacenter
 ns-s-wb-cl4-4507b.nshs.edu:
   hostname: 10.170.0.242
   groups:
     - Switch
   data:
-    site: 972 Brush Hollow Road, Westbury, N.Y., 3rd FL, Closet 4
+    site: Westbury
     type: Cisco IOS - SSH Capable
-    building: Remote
+    building: Datacenter
 nw-s-wb-cl6-d.net.northwell.edu:
   hostname: 10.170.0.219
   groups:
     - Switch
   data:
-    site: 972 Brush Hollow Road, Westbury, N.Y., 6th FL, Closet 6
+    site: Westbury
     type: Cisco IOS - SSH Capable
-    building: Remote
+    building: Datacenter
 ns-s-wb-cl6-4507b.nshs.edu:
   hostname: 10.170.0.237
   groups:
     - Switch
   data:
-    site: 972 Brush Hollow Road, Westbury, N.Y., 6th FL, Closet 6
+    site: Westbury
     type: Cisco IOS - SSH Capable
-    building: Remote
+    building: Datacenter
 ns-s-wb-cl6-4507a.nshs.edu:
   hostname: 10.170.0.236
   groups:
     - Router
   data:
-    site: 972 Brush Hollow Road, Westbury, N.Y., 6th FL, Closet 6
+    site: Westbury
     type: Cisco IOS - SSH Capable
-    building: Remote
+    building: Datacenter
 nw-s-wb-cl3-f.net.northwell.edu:
   hostname: 10.170.0.244
   groups:
     - Switch
   data:
-    site: 972 BrushHollow, Westbury, New York
+    site: Westbury
     type: Cisco IOS - SSH Capable
-    building: Remote
+    building: Datacenter
 nw-s-97-77-QueensBlvd-mdf-a.net.northwell.edu:
   hostname: 10.122.160.254
   groups:
@@ -13323,7 +13346,7 @@ ns-s-CCMC-idf2-a.nshs.edu:
     site: Cohen's Children's Hospital 2nd Floor IDF
     type: Cisco IOS - SSH Capable
     building: Remote
-ns-s-CCMC-idf3-a.nshs.edu:
+nw-s-nhp-CCMC-cl15-a.nshs.edu:
   hostname: 10.169.1.159
   groups:
     - Switch
@@ -13355,7 +13378,7 @@ ns-s-CCMC-idf2-b.nshs.edu:
     site: Cohen's Children's Hospital New Hyde Park New York, NY
     type: Cisco IOS - SSH Capable
     building: Remote
-ns-s-CCMC-idf3-b.nshs.edu:
+nw-s-nhp-CCMC-cl15-b.nshs.edu:
   hostname: 10.169.1.160
   groups:
     - Switch
@@ -13394,7 +13417,7 @@ nw-s-34viewacre-commdev.net.northwell.edu:
   data:
     site: Community Development Office, Huntington, NY 11743
     type: Cisco IOS - SSH Capable
-    building: Remote
+    building: Hospital
 PTCTRL03:
   hostname: 10.20.4.236
   groups:
@@ -14316,7 +14339,7 @@ nw-s-28viewacre-his01.net.northwell.edu:
   data:
     site: HIS Office, Huntington, NY 11743
     type: Cisco IOS - SSH Capable
-    building: Remote
+    building: Hospital
 nw-fw-1000Hemp-mdf-nth-a.net.northwell.edu_Primary:
   hostname: 10.120.128.225
   groups:
@@ -14383,14 +14406,6 @@ HH-C3850-WDC3.hunthosp.org:
     building: Hospital
 nw-s-270park-ge01.hunthosp.org:
   hostname: 10.186.1.17
-  groups:
-    - Switch
-  data:
-    site: Huntington Hospital
-    type: Cisco IOS - SSH Capable
-    building: Hospital
-nw-s-Temp-270HH-mdf-a.northwell.edu:
-  hostname: 10.186.1.18
   groups:
     - Switch
   data:
@@ -16277,7 +16292,7 @@ ns-s-nhp-ch3-f.nshs.edu:
     site: LIJ
     type: Cisco IOS - SSH Capable
     building: Hospital
-ns-s-nhp-EnergyCtr-a.northwell.edu:
+nw-s-nhp-EnergyCtr-a:
   hostname: 10.169.1.193
   groups:
     - Switch
@@ -16673,7 +16688,7 @@ ns-s-nhp-DIST-B.nshs.edu:
     site: LIJ
     type: Cisco IOS - SSH Capable
     building: Hospital
-nw-s-ccmc-CL57-a.net.northwell.edu:
+nw-s-nhp-cohens-cl57-a.net.northwell.edu:
   hostname: 10.169.1.92
   groups:
     - Switch
@@ -16681,7 +16696,7 @@ nw-s-ccmc-CL57-a.net.northwell.edu:
     site: LIJ
     type: Cisco IOS - SSH Capable
     building: Hospital
-nw-s-ccmc-CL57-c.net.northwell.edu:
+nw-s-nhp-cohens-cl57-c.net.northwell.edu:
   hostname: 10.169.1.90
   groups:
     - Switch
@@ -16689,7 +16704,7 @@ nw-s-ccmc-CL57-c.net.northwell.edu:
     site: LIJ
     type: Cisco IOS - SSH Capable
     building: Hospital
-nw-s-ccmc-CL57-b.net.northwell.edu:
+nw-s-nhp-cohens-cl57-b.net.northwell.edu:
   hostname: 10.169.1.91
   groups:
     - Switch
@@ -16697,7 +16712,7 @@ nw-s-ccmc-CL57-b.net.northwell.edu:
     site: LIJ
     type: Cisco IOS - SSH Capable
     building: Hospital
-nw-s-ccmc-CL9-a.net.northwell.edu:
+nw-s-nhp-cohens-cl09-a.net.northwell.edu:
   hostname: 10.169.1.106
   groups:
     - Switch
@@ -16705,7 +16720,7 @@ nw-s-ccmc-CL9-a.net.northwell.edu:
     site: LIJ
     type: Cisco IOS - SSH Capable
     building: Hospital
-nw-s-ccmc-CL9-c.net.northwell.edu:
+nw-s-nhp-cohens-cl09-c.net.northwell.edu:
   hostname: 10.169.1.104
   groups:
     - Switch
@@ -16713,8 +16728,16 @@ nw-s-ccmc-CL9-c.net.northwell.edu:
     site: LIJ
     type: Cisco IOS - SSH Capable
     building: Hospital
-nw-s-ccmc-CL9-b.net.northwell.edu:
+nw-s-nhp-cohens-cl09-b.net.northwell.edu:
   hostname: 10.169.1.105
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-fusion-a.net.northwell.edu:
+  hostname: 10.169.100.11
   groups:
     - Switch
   data:
@@ -25061,6 +25084,14 @@ nw-fw-100corp-AnyConnect-b.northwell.edu:
     site: None
     type: ASA
     building: Remote
+nw-r-972brus-cohesity:
+  hostname: 192.168.254.254
+  groups:
+    - Router
+  data:
+    site: Westbury
+    type: Cisco IOS - SSH Capable
+    building: Datacenter
 nw-fw-972brus-AnyConnect-b.northwell.edu:
   hostname: 10.170.23.253
   groups:
@@ -25068,7 +25099,7 @@ nw-fw-972brus-AnyConnect-b.northwell.edu:
   data:
     site: None
     type: ASA
-    building: Remote
+    building: Datacenter
 nw-fw-972brus-AnyConnect-a.northwell.edu:
   hostname: 10.170.23.254
   groups:
@@ -25076,7 +25107,7 @@ nw-fw-972brus-AnyConnect-a.northwell.edu:
   data:
     site: None
     type: ASA
-    building: Remote
+    building: Datacenter
 HH-ACE1-C1:
   hostname: 10.5.1.20
   groups:
