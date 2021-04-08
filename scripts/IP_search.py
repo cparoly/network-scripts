@@ -36,7 +36,7 @@ while True:
 	try:
 
 		file = input("What is the name of the file (include the .xlsx) " )
-		book = openpyxl.load_workbook(f'./data_files/{file}')  
+		book = openpyxl.load_workbook(f'./{file}')
 
 		sheet = book.active
 		break
@@ -130,6 +130,7 @@ def GetNextSwitch(mac):
 	next_switch = [switch for switch in next_switch if 'ns-s' in switch]
 	next_switch = str(next_switch)[1:-1]
 	next_switch = next_switch.strip("'")
+	print(f"****** {next_switch}  ********")
 
 
 

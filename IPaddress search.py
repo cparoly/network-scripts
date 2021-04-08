@@ -183,7 +183,7 @@ def FindAttachedInterface(switch, mac):
 	return int, duplex, speed, CRC, input_error, output_drops
 
 
-print("Connecting to " + distribution)
+print("Connecting to " + str(distribution))
 
 for ip in ips:
 	print(ip)

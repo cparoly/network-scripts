@@ -3,16 +3,7 @@ from nornir.core.filter import F
 from openpyxl import Workbook
 
 
-nr = InitNornir(core={"num_workers": 100},
-                inventory={
-                    "plugin": "nornir.plugins.inventory.simple.SimpleInventory",
-                    "options": {
-                        "host_file": "inventory/all-hosts.yaml",
-                        "group_file": "inventory/groups.yaml",
-                        "defaults_file": "inventory/defaults.yaml"
-                    }
-                }
-                )
+nr = InitNornir(config_file='config.yaml')
 
 wb = Workbook()
 
@@ -87,8 +78,8 @@ print('--' * 40)
 # location = nr.filter(~F(site="Valley Stream Hospital") & ~F(site="Syosset Hospital") & ~F(site="Southshore Hospital") &
 #                      ~F(site="Plainview Hospital") & ~F(site="PBMC") & ~F(site="NSUH") & ~F(site="MIT") & ~F(site="Huntington Hospital")
 #                      & ~F(site="Westbury"))
-devices = location.filter(F(type="Cisco IOS - SSH Capable") | F(type="Cisco NX OS") | F(type="Telnet")).inventory.hosts.keys()
 
+devices = location.filter(F(type="Cisco IOS - SSH Capable") | F(type="Cisco NX OS") | F(type="Telnet")).inventory.hosts.keys()
 
 for device in devices:
     print(device)

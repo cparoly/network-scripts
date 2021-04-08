@@ -1,5 +1,6 @@
 from socket import gethostbyaddr
 import openpyxl
+from tqdm import tqdm
 
 while True:
     try:
@@ -14,25 +15,25 @@ while True:
         continue
 
 
-sheet["B1"] = "Hostname"
+sheet["E1"] = "Hostname"
 
 ipaddress = []
 
-for ip in sheet["A"]:
+for ip in sheet["F"]:
     ipaddress.append(ip.value)
 
 ipaddress = iter(ipaddress)
 next(ipaddress)
 count = 2
-
-for ip in ipaddress:
+for ip in tqdm(ipaddress):
     try:
         resolved = gethostbyaddr(ip)[0]
-        sheet.cell(row=count, column=2, value=resolved)
+        sheet.cell(row=count, column=5, value=resolved)
         count += 1
     except:
         count += 1
         pass
+
 print("Complete")
 saved = input("Where do you want to save the file? (full path) or filename (will go in folder this script as ran from): ")
 book.save(saved)

@@ -6210,7 +6210,7 @@ nw-s-nhp-CCMC-cl15-d.net.northwell.edu:
   groups:
     - Switch
   data:
-    site: 270-05 75th Ave, New Hyde Park New York LIJ
+    site: LIJ
     type: Cisco IOS - SSH Capable
     building: Hospital
 nw-s-nhp-CCMC-cl15-c.net.northwell.edu:
@@ -6218,15 +6218,7 @@ nw-s-nhp-CCMC-cl15-c.net.northwell.edu:
   groups:
     - Switch
   data:
-    site: 270-05 75th Ave, New Hyde Park New York LIJ
-    type: Cisco IOS - SSH Capable
-    building: Hospital
-nw-s-nhp-kaufm-cl38-a:
-  hostname: 10.169.1.198
-  groups:
-    - Switch
-  data:
-    site: 270-05 75th Ave, New Hyde Park, NY,
+    site: LIJ
     type: Cisco IOS - SSH Capable
     building: Hospital
 ns-s-nhpAT-CL1E-a.nshs.edu:
@@ -6261,21 +6253,6 @@ ns-s-hil-MLOW-a.nshs.edu:
     site: 270-05 75th Ave, New Hyde Park, NY, Cellar FL (Oncology), C
     type: Cisco IOS - SSH Capable
     building: Hospital
-nw-s-nhp-rst-cl43-a:
-  hostname: 10.169.1.195
-  groups:
-    - Switch
-  data:
-    site: 270-05 75th Ave, New Hyde Park, NY, Closet ESLOW
-    type: Cisco IOS - SSH Capable
-    building: Hospital
-nw-s-nhp-bovistrl-a:
-  hostname: 10.169.1.114
-  groups:
-    - Switch
-  data:
-    type: Cisco IOS - SSH Capable
-    building: Hospital
 ns-s-hil-ESLOW-a.nshs.edu:
   hostname: 10.169.1.196
   groups:
@@ -6298,14 +6275,6 @@ ns-s-hil-LLOW-a.nshs.edu:
     - Switch
   data:
     site: 270-05 75th Ave, New Hyde Park, NY, Hillside Closet LLOW
-    type: Cisco IOS - SSH Capable
-    building: Remote
-nw-s-nhp-kaufm-cl38-b:
-  hostname: 10.169.1.59
-  groups:
-    - Switch
-  data:
-    site: 270-05 75th Ave,Kaufman New Hyde Park, NY
     type: Cisco IOS - SSH Capable
     building: Remote
 ns-s-hil-LITT-b.nshs.edu:
@@ -6457,7 +6426,7 @@ ASA-5506-LIJ-PCI-C.net.northwell.edu:
   groups:
     - Firewall
   data:
-    site: 270-05 75th St., New Hyde park
+    site: LIJ
     type: ASA
     building: Remote
 NW-FW-225COM-PCI-A.net.northwell.edu:
@@ -8906,15 +8875,7 @@ nw-s-nhp-400lake-cl31-b.nshs.edu:
   groups:
     - Router
   data:
-    site: 400 Lakeville Rd. New Hyde Park, NY LIJ Campus Closet 1East
-    type: Cisco IOS - SSH Capable
-    building: Remote
-nw-s-nhp-400lake-cl31-a :
-  hostname: 10.169.1.229
-  groups:
-    - Router
-  data:
-    site: 400 Lakeville Rd. New Hyde Park, NY LIJ Campus, Closet 1 East
+    site: LIJ
     type: Cisco IOS - SSH Capable
     building: Remote
 ns-s-nhp400-Suit-42-IT-Room.nshs.edu:
@@ -9318,30 +9279,6 @@ nw-r-415crossways-mdf-a.net.northwell.edu:
     site: 415 Crossways Park Dr, Woodbury, NY 11797 Router
     type: Cisco IOS - SSH Capable
     building: Remote
-nw-s-nhp-420lake-cl65-b:
-  hostname: 10.169.1.237
-  groups:
-    - Switch
-  data:
-    site: 420 Lakeville Rd New Hyde Park New York
-    type: Cisco IOS - SSH Capable
-    building: Remote
-nw-s-nhp-420lake-cl65-a:
-  hostname: 10.169.1.235
-  groups:
-    - Switch
-  data:
-    site: 420 Lakeville Rd. New Hyde Park, NY 2nd Fl. Closet 1 in Hallway
-    type: Cisco IOS - SSH Capable
-    building: Remote
-nw-s-nhp-420lake-cl32-a:
-  hostname: 10.169.1.236
-  groups:
-    - Switch
-  data:
-    site: 420 Lakeville Rd. New Hyde Park, NY Closet 2 in Basement
-    type: Cisco IOS - SSH Capable
-    building: Remote
 ns-v-4287Richmond-mdf-a.nslijhs.net:
   hostname: 100.92.250.25
   groups:
@@ -9419,7 +9356,7 @@ ns-fw-430LKVNHP-PCI-A.nslijhs.net_Secondary:
   groups:
     - Firewall
   data:
-    site: 430 Lakeville Road, NHP LIJ Parking Gargae
+    site: LIJ
     type: ASA
     building: Remote
 nw-s-4300Hempstead-mdf-a.net.northwell.edu:
@@ -16484,22 +16421,6 @@ ns-s-nhp-DB10-a.nshs.edu:
     site: LIJ
     type: Cisco IOS - SSH Capable
     building: Hospital
-nw-s-nhp-430lake-cl33-a:
-  hostname: 10.169.1.231
-  groups:
-    - Switch
-  data:
-    site: LIJ
-    type: Cisco IOS - SSH Capable
-    building: Hospital
-ns-s-420nhp-237b:
-  hostname: 10.169.1.45
-  groups:
-    - Switch
-  data:
-    site: LIJ
-    type: Cisco IOS - SSH Capable
-    building: Hospital
 ns-s-420nhp-temp-2:
   hostname: 10.169.1.46
   groups:
@@ -16834,6 +16755,1862 @@ ns-s-nhpAT-CLbaseW-a.nshs.edu:
     building: Hospital
 ns-s-security-a.nshs.edu:
   hostname: 10.169.1.172
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-mdf-a:
+  hostname: 10.169.100.10
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-fusion-a:
+  hostname: 10.169.100.11
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-ccmc-cl01-trnst-a:
+  hostname: 10.169.100.42
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-ccmc-cl01-trnst-b:
+  hostname: 10.169.100.43
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-ccmc-cl13-b:
+  hostname: 10.169.100.44
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-wireless-dist-a:
+  hostname: 10.169.99.240
+  groups:
+    - Nexus
+  data:
+    site: LIJ
+    type: Cisco NX OS
+    building: Hospital
+nw-s-nhp-wireless-dist-b:
+  hostname: 10.169.99.241
+  groups:
+    - Nexus
+  data:
+    site: LIJ
+    type: Cisco NX OS
+    building: Hospital
+nw-s-nhp-wired-dist-a:
+  hostname: 10.169.99.242
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-wired-dist-b:
+  hostname: 10.169.99.243
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-r-nhp-core-a:
+  hostname: 10.169.99.244
+  groups:
+    - Nexus
+  data:
+    site: LIJ
+    type: Cisco NX OS
+    building: Hospital
+nw-r-nhp-core-b:
+  hostname: 10.169.99.245
+  groups:
+    - Nexus
+  data:
+    site: LIJ
+    type: Cisco NX OS
+    building: Hospital
+nw-r-nhp-wan-a:
+  hostname: 10.169.99.247
+  groups:
+    - Router
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-r-nhp-wan-b:
+  hostname: 10.169.99.248
+  groups:
+    - Router
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-DIST-A:
+  hostname: 10.169.99.252
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-DIST-B:
+  hostname: 10.169.99.253
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-ipark-mdf1-a:
+  hostname: 10.169.1.30
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-ipark-mdf1-b:
+  hostname: 10.169.1.31
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-410lake-cl06-c:
+  hostname: 10.169.1.32
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-410lake-cl06-d:
+  hostname: 10.169.1.33
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-ss12-d:
+  hostname: 10.169.1.34
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-ONC15-c:
+  hostname: 10.169.1.36
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-400lake-ste42-a:
+  hostname: 10.169.1.38
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-CH3-d:
+  hostname: 10.169.1.40
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-CH2-b:
+  hostname: 10.169.1.41
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-CH1-E:
+  hostname: 10.169.1.42
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-RCV11-b:
+  hostname: 10.169.1.43
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-stp6-b:
+  hostname: 10.169.1.44
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-420nhp-237b:
+  hostname: 10.169.1.45
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-420lake-cl32-b:
+  hostname: 10.169.1.46
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-STP7-C:
+  hostname: 10.169.1.47
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-llow-cl36-b:
+  hostname: 10.169.1.52
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-mlow-cl35-b:
+  hostname: 10.169.1.53
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-litt-cl37-b:
+  hostname: 10.169.1.58
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-kaufm-cl38-b:
+  hostname: 10.169.1.59
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-eslow-cl34-b:
+  hostname: 10.169.1.61
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-STP8-d:
+  hostname: 10.169.1.65
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-ONC15-g:
+  hostname: 10.169.1.66
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-ONC15-h:
+  hostname: 10.169.1.67
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-ONC15-i:
+  hostname: 10.169.1.68
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+NS-S-NHP-FUSION-A:
+  hostname: 10.169.1.69
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-MED-2:
+  hostname: 10.169.1.70
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-litt-cl59-c:
+  hostname: 10.169.1.87
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-litt-cl59-b:
+  hostname: 10.169.1.88
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-litt-cl59-a:
+  hostname: 10.169.1.89
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-cohens-cl57-c:
+  hostname: 10.169.1.90
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-cohens-cl57-b:
+  hostname: 10.169.1.91
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-cohens-cl57-a:
+  hostname: 10.169.1.92
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-PJK-Katz-tun-a:
+  hostname: 10.169.1.95
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-PKJ-Cl1-c:
+  hostname: 10.169.1.97
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-PKJ-Cl1-b:
+  hostname: 10.169.1.98
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-PKJ-Cl1-a:
+  hostname: 10.169.1.99
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-CH2-d:
+  hostname: 10.169.1.100
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-LIJKatz-8th-Temp-a:
+  hostname: 10.169.1.101
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-cohens-cl09-c:
+  hostname: 10.169.1.104
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-cohens-cl09-a:
+  hostname: 10.169.1.106
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-onc-CL58-a:
+  hostname: 10.169.1.109
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-400lake-ste61-b:
+  hostname: 10.169.1.110
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-400lake-ste61-a:
+  hostname: 10.169.1.111
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-ch1-c:
+  hostname: 10.169.1.112
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-bovistrl-a:
+  hostname: 10.169.1.114
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-400lake-sf-a:
+  hostname: 10.169.1.115
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-PBX-b:
+  hostname: 10.169.1.120
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-410lake-cl07-a:
+  hostname: 10.169.1.128
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-410lake-cl06-b:
+  hostname: 10.169.1.129
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-410lake-cl06-a:
+  hostname: 10.169.1.130
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-410lake-cl05-b:
+  hostname: 10.169.1.131
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-410lake-cl05-a:
+  hostname: 10.169.1.132
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-410lake-cl00-dist-a:
+  hostname: 10.169.1.133
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-400lake-cl31-c:
+  hostname: 10.169.1.134
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-400lake-cl30-c:
+  hostname: 10.169.1.135
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-ccmc-cl15-c:
+  hostname: 10.169.1.137
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-stp9-c:
+  hostname: 10.169.1.139
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-LIJKatz-idf3-a:
+  hostname: 10.169.1.140
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-LIJKatz-idf4-a:
+  hostname: 10.169.1.141
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-LIJKatz-idf5-a:
+  hostname: 10.169.1.142
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-LIJKatz-idf6-a:
+  hostname: 10.169.1.143
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-LIJKatz-idf8-a:
+  hostname: 10.169.1.144
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+NS-S-LIJKatz-idf9-a:
+  hostname: 10.169.1.145
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-LIJKatz-idflobby-a:
+  hostname: 10.169.1.146
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+NS-S-LIJKatz-idfgnd-a:
+  hostname: 10.169.1.147
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-bhp-cl50-a:
+  hostname: 10.169.1.148
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-bhp-cl51-a:
+  hostname: 10.169.1.149
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-bhp-cl52-a:
+  hostname: 10.169.1.150
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-bhp-cl53-a:
+  hostname: 10.169.1.151
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-bhp-cl54-a:
+  hostname: 10.169.1.152
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-bhp-cl55-a:
+  hostname: 10.169.1.153
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-ccmc-cl13-a:
+  hostname: 10.169.1.155
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-ccmc-cl14-a:
+  hostname: 10.169.1.157
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-ccmc-cl14-b:
+  hostname: 10.169.1.158
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-ccmc-cl15-a:
+  hostname: 10.169.1.159
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-ccmc-cl15-b:
+  hostname: 10.169.1.160
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-ccmc-cl01-a:
+  hostname: 10.169.1.161
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-ccmc-cl01-b:
+  hostname: 10.169.1.162
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-ccmc-cl01-c:
+  hostname: 10.169.1.163
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-ccmc-cl01-d:
+  hostname: 10.169.1.164
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-CH6-a:
+  hostname: 10.169.1.168
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-stp1-e:
+  hostname: 10.169.1.169
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-STP1-d:
+  hostname: 10.169.1.170
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-ONC15-j:
+  hostname: 10.169.1.171
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-security-a:
+  hostname: 10.169.1.172
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-lijparkgarage-a:
+  hostname: 10.169.1.173
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-rcs-cl19-b:
+  hostname: 10.169.1.174
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-STP9-b:
+  hostname: 10.169.1.175
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-STP7-E:
+  hostname: 10.169.1.176
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-CH1-D:
+  hostname: 10.169.1.177
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-CH3-E:
+  hostname: 10.169.1.178
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-ONC15-E:
+  hostname: 10.169.1.179
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-STP1-a:
+  hostname: 10.169.1.180
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-STP1-b:
+  hostname: 10.169.1.181
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-STP1-c:
+  hostname: 10.169.1.182
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-CH2-c:
+  hostname: 10.169.1.183
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-STP7-F:
+  hostname: 10.169.1.184
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-SH13-c:
+  hostname: 10.169.1.185
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-CH3-C:
+  hostname: 10.169.1.186
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-ONC15-F:
+  hostname: 10.169.1.187
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-STP8-b:
+  hostname: 10.169.1.188
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-CH4-d:
+  hostname: 10.169.1.189
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-410lake-cl64-c:
+  hostname: 10.169.1.190
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-410lake-cl63-a:
+  hostname: 10.169.1.191
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-ch3-f:
+  hostname: 10.169.1.192
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-energyctr-a:
+  hostname: 10.169.1.193
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-CH1-F:
+  hostname: 10.169.1.194
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-rst-cl43-a:
+  hostname: 10.169.1.195
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-eslow-cl34-a:
+  hostname: 10.169.1.196
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-llow-cl36-a:
+  hostname: 10.169.1.197
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-kaufm-cl38-a:
+  hostname: 10.169.1.198
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-litt-cl37-a:
+  hostname: 10.169.1.199
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-mlow-cl35-a:
+  hostname: 10.169.1.200
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-CH3-b:
+  hostname: 10.169.1.201
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-CH3-a:
+  hostname: 10.169.1.202
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-ONC15-a:
+  hostname: 10.169.1.203
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-ONC15-b:
+  hostname: 10.169.1.204
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+NS-S-NHP-CH1-B:
+  hostname: 10.169.1.205
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+NS-S-NHP-CH1-A:
+  hostname: 10.169.1.206
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-410lake-cl62-a:
+  hostname: 10.169.1.207
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-410lake-cl64-b:
+  hostname: 10.169.1.208
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-410lake-cl63-b:
+  hostname: 10.169.1.209
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-410lake-cl64-a:
+  hostname: 10.169.1.210
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-CH4-b:
+  hostname: 10.169.1.211
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-CH4-a:
+  hostname: 10.169.1.212
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-CH2-a:
+  hostname: 10.169.1.213
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-rcs-cl19-a:
+  hostname: 10.169.1.214
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-SS12-C:
+  hostname: 10.169.1.215
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-SS12-a:
+  hostname: 10.169.1.216
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-STP9-a:
+  hostname: 10.169.1.217
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-STP8-a:
+  hostname: 10.169.1.218
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-SH13-a:
+  hostname: 10.169.1.219
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-STP6-a:
+  hostname: 10.169.1.220
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-stp5-b:
+  hostname: 10.169.1.221
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-STP5-a:
+  hostname: 10.169.1.222
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-STP7-a:
+  hostname: 10.169.1.223
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-STP7-b:
+  hostname: 10.169.1.224
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-RCV11-a:
+  hostname: 10.169.1.225
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-DB10-a:
+  hostname: 10.169.1.226
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-400lake-cl30-b:
+  hostname: 10.169.1.227
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-400lake-cl30-a:
+  hostname: 10.169.1.228
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-400lake-cl31-a:
+  hostname: 10.169.1.229
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-400lake-cl31-b:
+  hostname: 10.169.1.230
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-430lake-cl33-a:
+  hostname: 10.169.1.231
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-SH13-d:
+  hostname: 10.169.1.232
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-400lake-cl30-d:
+  hostname: 10.169.1.233
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-acp-cl45-b:
+  hostname: 10.169.1.234
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-420lake-cl65-a:
+  hostname: 10.169.1.235
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-420lake-cl32-a:
+  hostname: 10.169.1.236
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-420lake-cl65-b:
+  hostname: 10.169.1.237
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-acp-cl46-b:
+  hostname: 10.169.1.238
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-acp-cl49-a:
+  hostname: 10.169.1.240
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-acp-cl48-a:
+  hostname: 10.169.1.241
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-acp-cl47-a:
+  hostname: 10.169.1.242
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-acp-cl46-a:
+  hostname: 10.169.1.243
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-acp-cl45-a:
+  hostname: 10.169.1.244
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-acp-cl44-a:
+  hostname: 10.169.1.245
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-acp-cl45-c:
+  hostname: 10.169.1.246
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-Ch5-b:
+  hostname: 10.169.1.247
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-s-nhp-Ch5-a:
+  hostname: 10.169.1.248
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+ns-s-nhp-CH5-c:
+  hostname: 10.169.1.249
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-lij-cl02-a:
+  hostname: 10.102.100.5
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-ccmc-cl01-a:
+  hostname: 10.102.100.6
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-lij-cl03-a:
+  hostname: 10.102.100.7
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-lij-cl04-a:
+  hostname: 10.102.100.8
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-lij-cl05-a:
+  hostname: 10.102.100.9
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-lij-cl06-a:
+  hostname: 10.102.100.10
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-lij-cl07-a:
+  hostname: 10.102.100.11
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-lij-cl08-a:
+  hostname: 10.102.100.12
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-lij-cl00-a:
+  hostname: 10.102.100.13
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-ccmc-cl09-a:
+  hostname: 10.102.100.14
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-ccmc-cl10-a:
+  hostname: 10.102.100.15
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-ccmc-cl11-a:
+  hostname: 10.102.100.16
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-ccmc-cl12-a:
+  hostname: 10.102.100.17
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-ccmc-cl13-a:
+  hostname: 10.102.100.18
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-ccmc-cl14-a:
+  hostname: 10.102.100.19
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-ccmc-cl15-a:
+  hostname: 10.102.100.20
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-ccmc-cl16-a:
+  hostname: 10.102.100.21
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-ccmc-cl17-a:
+  hostname: 10.102.100.22
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-lij-cl18-a:
+  hostname: 10.102.100.23
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-rcs-cl19-a:
+  hostname: 10.102.100.24
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-onc-cl20-a:
+  hostname: 10.102.100.25
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-onc-cl21-a:
+  hostname: 10.102.100.26
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-ccmc-cl57-a:
+  hostname: 10.102.100.28
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-katz-cl22-a:
+  hostname: 10.102.100.29
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-katz-cl23-a:
+  hostname: 10.102.100.30
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-katz-cl24-a:
+  hostname: 10.102.100.31
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-katz-cl25-a:
+  hostname: 10.102.100.32
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-katz-cl26-a:
+  hostname: 10.102.100.33
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-katz-cl27-a:
+  hostname: 10.102.100.34
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-katz-cl28-a:
+  hostname: 10.102.100.35
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-katz-cl29-a:
+  hostname: 10.102.100.36
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-430lake-cl33-a:
+  hostname: 10.102.100.37
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-400lake-cl30-a:
+  hostname: 10.102.100.38
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-400lake-cl31-a:
+  hostname: 10.102.100.39
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-ccmc-cl58-a:
+  hostname: 10.102.100.40
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-rcs-cl61-a:
+  hostname: 10.102.100.41
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-ccmc-cl01-trnst-a:
+  hostname: 10.102.100.42
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-ccmc-cl01-trnst-b:
+  hostname: 10.102.100.43
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-zhh-cl34-a:
+  hostname: 10.102.100.100
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-zhh-cl35-a:
+  hostname: 10.102.100.101
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-zhh-cl36-a:
+  hostname: 10.102.100.102
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-zhh-cl37-a:
+  hostname: 10.102.100.103
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-zhh-cl38-a:
+  hostname: 10.102.100.104
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-zhh-cl43-a:
+  hostname: 10.102.100.108
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-acp-cl44-a:
+  hostname: 10.102.100.109
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-acp-cl45-a:
+  hostname: 10.102.100.110
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-acp-cl46-a:
+  hostname: 10.102.100.111
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-acp-cl47-a:
+  hostname: 10.102.100.112
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-acp-cl48-a:
+  hostname: 10.102.100.113
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-acp-cl49-a:
+  hostname: 10.102.100.114
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-bhp-cl50-a:
+  hostname: 10.102.100.115
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-bhp-cl51-a:
+  hostname: 10.102.100.116
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-bhp-cl52-a:
+  hostname: 10.102.100.117
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-bhp-cl53-a:
+  hostname: 10.102.100.118
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-bhp-cl54-a:
+  hostname: 10.102.100.119
+  groups:
+    - Switch
+  data:
+    site: LIJ
+    type: Cisco IOS - SSH Capable
+    building: Hospital
+nw-wls-nhp-bhp-cl55-a:
+  hostname: 10.102.100.120
   groups:
     - Switch
   data:
@@ -25057,7 +26834,7 @@ ns-fw-701PHELP-PCI-A.nshs.edu:
   groups:
     - Firewall
   data:
-    site: None
+    site: Phelps Hospital
     type: ASA
     building: Remote
 ns-fw-701PHELP-PCI-B.nshs.edu:
@@ -25065,7 +26842,7 @@ ns-fw-701PHELP-PCI-B.nshs.edu:
   groups:
     - Firewall
   data:
-    site: None
+    site: Phelps Hospital
     type: ASA
     building: Remote
 nw-fw-100corp-AnyConnect-a.northwell.edu:
@@ -25073,7 +26850,7 @@ nw-fw-100corp-AnyConnect-a.northwell.edu:
   groups:
     - Firewall
   data:
-    site: None
+    site: MIT
     type: ASA
     building: Remote
 nw-fw-100corp-AnyConnect-b.northwell.edu:
@@ -25081,7 +26858,7 @@ nw-fw-100corp-AnyConnect-b.northwell.edu:
   groups:
     - Firewall
   data:
-    site: None
+    site: MIT
     type: ASA
     building: Remote
 nw-r-972brus-cohesity:
@@ -25097,7 +26874,7 @@ nw-fw-972brus-AnyConnect-b.northwell.edu:
   groups:
     - Firewall
   data:
-    site: None
+    site: Westbury
     type: ASA
     building: Datacenter
 nw-fw-972brus-AnyConnect-a.northwell.edu:
@@ -25105,7 +26882,7 @@ nw-fw-972brus-AnyConnect-a.northwell.edu:
   groups:
     - Firewall
   data:
-    site: None
+    site: Westbury
     type: ASA
     building: Datacenter
 HH-ACE1-C1:
@@ -25153,8 +26930,8 @@ HH-ACE2-C1:
   groups:
     - Switch
   data:
-    site: None
-    type: 0_old LHH password - Not Active
+    site: LHH
+    type: Cisco
     building: Remote
 122e76-3rm3c-3550-48-1:
   hostname: 10.90.88.103
