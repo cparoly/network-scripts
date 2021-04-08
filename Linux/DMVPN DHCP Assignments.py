@@ -95,8 +95,9 @@ default_router = default_router.splitlines()
 default_router = default_router[0]
 
 # Send the commands to create the new reserved pool
+# add in dns and domain
 config_commands = ['ip dhcp pool RESERVED' + str(counter), 'host ' + str(IP), 'hardware-address ' + MAC,
-                   'domain-name nslijhs.net', 'dns-server 10.140.185.225 10.170.78.225', default_router]
+                    default_router]
 reserved = net_connect.send_config_set(config_commands)
 
 print(reserved)
