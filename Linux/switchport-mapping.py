@@ -1,6 +1,5 @@
 # Created by Chris Paroly
-# Northwell Health
-# Manager: Thomas Hynes
+
 
 from netmiko import ConnectHandler
 from netmiko import NetMikoTimeoutException
